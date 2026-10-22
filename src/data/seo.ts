@@ -45,15 +45,15 @@ export interface CategorySeo {
 
 export const CATEGORY_SEO: Record<Category, CategorySeo> = {
   "kanap-i-tkanina": {
-    title: "Jutani kanap na metar, platno i trake",
-    h1: "Jutani kanap na metar, platno i tkanina",
+    title: "Jutani kanap na metar, konopac, platno i juta traka — cena",
+    h1: "Jutani kanap na metar, platno i juta traka",
     description:
-      "Jutani kanap na metar od 4 do 40 mm — prirodni, sintetički i u boji, klupčad i snopovi, jutano platno i trake. {count} proizvoda, od {from}. Dostava po Srbiji.",
+      "Jutani kanap i konopac na metar od 4 do 40 mm — prirodni, sintetički i u boji, juta klupče, jutano platno i juta traka. {count} proizvoda, od {from}. Dostava po Srbiji.",
     sections: [
       {
         h2: "Prirodna, sintetička ili juta u boji?",
         p: [
-          "Prirodna (natur) juta je biljno vlakno: topla na dodir, prepoznatljive boje i potpuno biorazgradiva. Najbolja je za enterijer, dekoraciju, grebalice za mačke, pakovanje i zanatske radove.",
+          "Jutani kanap — zovu ga i jutani konopac, juta kanap ili uže od jute — prodajemo na metar, u debljini koja vam treba. Prirodna (natur) juta je biljno vlakno: topla na dodir, prepoznatljive boje i potpuno biorazgradiva. Najbolja je za enterijer, dekoraciju, grebalice za mačke, pakovanje i zanatske radove.",
           "Sintetička juta izgleda kao prirodna, ali ne upija vodu i ne truli, pa je pravi izbor za ograde, terase, bašte, nautiku i sve što stoji napolju. Juta u boji je isti prirodan kanap u tonovima koji se uklapaju u vaš projekat.",
         ],
       },
@@ -83,6 +83,14 @@ export const CATEGORY_SEO: Record<Category, CategorySeo> = {
         a: `Plaćanje je pouzećem, gotovinom kuriru. Dostava po celoj Srbiji traje ${DELIVERY} od potvrde porudžbine.`,
       },
       {
+        q: "Koja je razlika između kanapa, konopca i užeta od jute?",
+        a: "Kod jute se ti nazivi koriste za isti materijal — „kanap” češće za tanji, „konopac” i „uže” za deblji. Kod nas birate debljinu u milimetrima, od 1 do 40 mm.",
+      },
+      {
+        q: "Da li je juta dobra za mačju grebalicu?",
+        a: "Može, ali je sisal tvrđi i otporniji pa je češći izbor za grebalice koje mačka intenzivno koristi. Juta je mekša i lepša na oko. Više u vodiču „Juta ili sisal za grebalicu”.",
+      },
+      {
         q: "Imate li jutano platno?",
         a: "Da — jutano platno od 100% prirodne jute, širine 1,15 m, prodaje se po kvadratnom metru, kao i tkane jutane trake u boji širine 5 do 20 cm.",
       },
@@ -92,9 +100,15 @@ export const CATEGORY_SEO: Record<Category, CategorySeo> = {
       { label: "Prirodna ili sintetička juta", href: "/vodic/prirodna-ili-sinteticka-juta" },
       { label: "Kanap za ogradu i gelender", href: "/primena/kanap-za-ogradu-i-gelender" },
       { label: "Kanap za mačje grebalice", href: "/primena/kanap-za-macje-grebalice" },
+      { label: "Kanap, konopac ili uže — razlike", href: "/vodic/kanap-konopac-ili-uze" },
+      { label: "Juta za venčanja i pakovanje poklona", href: "/primena/juta-za-vencanja-i-poklone" },
     ],
     keywords: [
       "jutani kanap",
+      "jutani konopac",
+      "juta kanap",
+      "jutani kanap cena",
+      "jutani kanap 10 mm",
       "jutani kanap na metar",
       "juta kanap cena",
       "sintetička juta",
@@ -105,15 +119,15 @@ export const CATEGORY_SEO: Record<Category, CategorySeo> = {
   },
 
   "sport-i-penjanje": {
-    title: "Kanap za penjanje, brodske merdevine i mreže od jute",
-    h1: "Kanapi za penjanje, merdevine i mreže",
+    title: "Kanap za penjanje, uže za penjanje i brodske merdevine",
+    h1: "Kanapi i užad za penjanje, merdevine i mreže",
     description:
-      "Jutani kanap za penjanje fi 30 i fi 40, brodske merdevine, mreže za penjanje i monkey bar kanapi. {count} proizvoda, od {from}. Dostava po celoj Srbiji.",
+      "Kanap za penjanje (uže, konopac) fi 30 i fi 40 od jute, brodske merdevine od kanapa, mreže za penjanje i monkey bar kanap. {count} proizvoda, od {from}. Dostava po Srbiji.",
     sections: [
       {
         h2: "Za dvorište, igralište i teretanu",
         p: [
-          "Jutani kanap je prijatan za ruku i dobro drži hvat, zato se vekovima koristi za penjanje. Za decu je pogodan junior kanap fi 30, a za odrasle i teretane kanap fi 40 sa čeličnom alkom za kačenje.",
+          "Kanap za penjanje — u prodavnicama i kao uže za penjanje ili konopac za penjanje — od jute je prijatan za ruku i dobro drži hvat, zato se vekovima koristi za penjanje. Za decu je pogodan junior kanap fi 30, a za odrasle i teretane kanap fi 40 sa čeličnom alkom za kačenje.",
           "Brodske merdevine od kanapa i drvenih prečki rade se u dužinama od 1 do 10 metara, a mreže za penjanje i zaštitne mreže pletemo po meri vaše konstrukcije.",
         ],
       },
@@ -144,12 +158,17 @@ export const CATEGORY_SEO: Record<Category, CategorySeo> = {
     ],
     related: [
       { label: "Kanap za dečija igrališta", href: "/primena/kanap-za-decja-igralista" },
+      { label: "Kako izabrati kanap za penjanje", href: "/vodic/kako-izabrati-kanap-za-penjanje" },
+      { label: "Ljuljaška za dvorište", href: "/primena/ljuljaska-za-dvoriste" },
       { label: "Ljuljaške od drveta i jute", href: "/kategorija/kuca-i-dekoracija" },
       { label: "Kako održavati jutani kanap", href: "/vodic/kako-odrzavati-jutani-kanap" },
     ],
     keywords: [
       "kanap za penjanje",
+      "uže za penjanje",
       "konopac za penjanje",
+      "kanap za penjanje 40 mm",
+      "merdevine od kanapa",
       "brodske merdevine",
       "mreža za penjanje",
       "merdevine od kanapa",
@@ -158,7 +177,7 @@ export const CATEGORY_SEO: Record<Category, CategorySeo> = {
   },
 
   "kuca-i-dekoracija": {
-    title: "Nameštaj, rasveta i dekoracija od jute",
+    title: "Jutani luster, visilice, ljuljaške i nameštaj od jute",
     h1: "Nameštaj, rasveta i dekoracija od jute",
     description:
       "Jutani taburei, pletene stolice, ljuljaške, lusteri i visilice, zidne i plafonske dekoracije od kanapa, podmetači i džakčići. Ručna izrada, od {from}.",
@@ -196,13 +215,18 @@ export const CATEGORY_SEO: Record<Category, CategorySeo> = {
       },
     ],
     related: [
-      { label: "Rasveta i dekor za kafane i restorane", href: "/primena/jutana-rasveta-za-ugostitelje" },
+      { label: "Dekoracija za kafane i restorane", href: "/primena/jutana-rasveta-za-ugostitelje" },
+      { label: "Ljuljaška za dvorište", href: "/primena/ljuljaska-za-dvoriste" },
+      { label: "Božićna dekoracija od jute", href: "/vodic/bozicna-dekoracija-od-jute" },
       { label: "Reference — naši radovi", href: "/reference" },
       { label: "Kako održavati jutani kanap", href: "/vodic/kako-odrzavati-jutani-kanap" },
     ],
     keywords: [
       "jutani tabure",
       "jutani luster",
+      "luster od kanapa",
+      "ljuljaška za dvorište",
+      "dekoracija za kafanu",
       "visilica od kanapa",
       "ljuljaška od drveta",
       "dekoracija od kanapa",
@@ -356,8 +380,8 @@ export const USE_PAGES: UsePage[] = [
   },
   {
     slug: "jutana-rasveta-za-ugostitelje",
-    title: "Jutana rasveta i dekor za kafane i restorane",
-    h1: "Rasveta i dekoracija od jute za kafane i restorane",
+    title: "Dekoracija za kafane i restorane od jute — rasveta i plafoni",
+    h1: "Dekoracija za kafane i restorane od jute",
     description:
       "Jutane visilice, lusteri, kanap sa el. kablom, plafonske i zidne dekoracije od kanapa za kafane, restorane i hotele. Izrada po meri.",
     intro: [
@@ -441,6 +465,79 @@ export const USE_PAGES: UsePage[] = [
       },
     ],
     keywords: ["bokobrani", "nautički dekor", "kanap za brod", "brodski konop"],
+  },
+  {
+    slug: "ljuljaska-za-dvoriste",
+    title: "Ljuljaška za dvorište od drveta i jute",
+    h1: "Ljuljaška za dvorište od drveta i jute",
+    description:
+      "Ljuljaške za dvorište, baštu i terasu — drvena daska ili okrugli prsten na jutanom užetu, plus kanap i alke za kačenje. Od {from}, dostava po Srbiji.",
+    intro: [
+      "Ljuljaška na jutanom užetu je najjednostavniji način da dvorište dobije mesto za igru i odmor. Drvo i juta izgledaju prirodno u bašti i ne deluju kao plastična igračka.",
+      "Pored gotovih ljuljaški nudimo i kanap, alke i suze ako ljuljašku pravite ili popravljate sami.",
+    ],
+    products: [
+      "ljuljaska-basic-drvo-i-juta",
+      "ljuljaska-gospodar-prstenova",
+      "sinteticka-juta",
+      "metalna-alka-za-kanap",
+      "metalna-suza-za-kanap",
+    ],
+    tips: {
+      h2: "Saveti za kačenje ljuljaške",
+      p: [
+        "Ljuljašku kačite na granu ili gredu predviđenu za dinamičko opterećenje, a ispod ostavite slobodan prostor i meku podlogu. Mesto kačenja i uže povremeno proverite na habanje.",
+        "Prirodna juta voli natkriven prostor — za ljuljašku koja stalno stoji na kiši izaberite sintetičku jutu ili je unosite zimi.",
+      ],
+    },
+    faqs: [
+      {
+        q: "Da li ljuljaška može da stoji napolju cele godine?",
+        a: "Prirodna juta brže stari na kiši i suncu. Najbolje je da ljuljaška bude pod krošnjom ili nadstrešnicom, a zimi je unesite.",
+      },
+      {
+        q: "Šta mi treba za kačenje?",
+        a: "Čvrst nosač, kanap odgovarajuće debljine i metalne alke ili suze za uredan završetak. Pitajte nas ako niste sigurni šta da izaberete.",
+      },
+    ],
+    keywords: ["ljuljaška za dvorište", "ljuljaška od drveta", "ljuljaška od jute", "drvena ljuljaška"],
+  },
+  {
+    slug: "juta-za-vencanja-i-poklone",
+    title: "Juta za venčanja, proslave i pakovanje poklona",
+    h1: "Juta za venčanja, proslave i pakovanje poklona",
+    description:
+      "Juta traka, jutani džakčići, tanki kanap i jutano platno za venčanja, krštenja, proslave i pakovanje poklona. Rustičan dekor od prirodne jute, od {from}.",
+    intro: [
+      "Juta je omiljena za rustična venčanja i proslave: traka na stolicama i stolovima, džakčići za poklone gostima, tanki kanap za kartice sa imenima i buketiće.",
+      "Za poklone i praznike juta daje toplo, prirodno pakovanje — od Božića i Nove godine do Valentinova.",
+    ],
+    products: [
+      "juta-traka-u-boji",
+      "jutani-dzakcici-i-vrece",
+      "juta-klube-1mm",
+      "juta-klube-2-5mm",
+      "jutano-platno",
+      "jutani-podmetac",
+    ],
+    tips: {
+      h2: "Ideje za dekoraciju",
+      p: [
+        "Trakom obmotajte vaze i tegle sa cvećem, vežite salvete tankim kanapom, a džakčiće napunite bombonama ili začinima kao poklon za goste. Jutano platno može poslužiti kao staza preko stola.",
+        "Za veće proslave računajte količine unapred i pošaljite upit — dajemo ponudu za veće količine.",
+      ],
+    },
+    faqs: [
+      {
+        q: "Da li prodajete džakčiće i traku u većim količinama?",
+        a: "Da — za venčanja, proslave i firme pošaljite upit sa količinama i dobićete ponudu.",
+      },
+      {
+        q: "Koje veličine džakčića imate?",
+        a: "Od malih 10 × 14 cm do vreća 50 × 100 cm — sve veličine su na stranici proizvoda.",
+      },
+    ],
+    keywords: ["juta za venčanje", "juta traka", "jutani džakčići", "dekoracija od jute za venčanje", "juta za pakovanje poklona"],
   },
 ];
 
@@ -577,6 +674,152 @@ export const GUIDES: Guide[] = [
     ],
     keywords: ["održavanje jute", "kako očistiti jutu", "nega jutanog kanapa"],
     published: "2026-10-22",
+  },
+  {
+    slug: "juta-ili-sisal-za-grebalicu",
+    title: "Juta ili sisal za mačju grebalicu?",
+    description:
+      "Razlike između jute i sisala za mačje grebalice: tvrdoća, trajnost, izgled — i kada je juta dobar izbor, a kada je bolji sisal.",
+    intro:
+      "Kada pravite ili obnavljate grebalicu, prvo pitanje je materijal. Juta i sisal su oba prirodna vlakna, ali se ponašaju različito pod mačjim kandžama.",
+    sections: [
+      {
+        h2: "Sisal: tvrđi i otporniji",
+        p: [
+          "Sisal se dobija od agave. Vlakna su tvrđa i grublja, pa duže podnose intenzivno grebanje — zato je sisal najčešći materijal gotovih grebalica.",
+        ],
+      },
+      {
+        h2: "Juta: mekša i lepša na oko",
+        p: [
+          "Juta je mekša i toplija, prijatnija na dodir i lepše se uklapa u enterijer. Mnoge mačke je rado koriste, ali se pri intenzivnom grebanju brže lista i troši.",
+        ],
+      },
+      {
+        h2: "Kada izabrati jutu",
+        p: [
+          "Za mačiće, mirnije mačke, dekorativne grebalice i delove grebalice koji se manje koriste juta je sasvim dobar izbor. Kad se kanap istroši, lako se zamenjuje — najčešće se koristi prirodni jutani kanap 6–10 mm.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Kanap za mačje grebalice", href: "/primena/kanap-za-macje-grebalice" },
+      { label: "Prirodni jutani kanap", href: "/proizvod/prirodna-juta" },
+      { label: "Koja debljina kanapa mi treba", href: "/vodic/koja-debljina-jutanog-kanapa" },
+    ],
+    keywords: ["juta ili sisal", "sisal za grebalicu", "juta za grebalicu", "kanap za grebalicu"],
+    published: "2026-10-23",
+  },
+  {
+    slug: "kanap-konopac-ili-uze",
+    title: "Kanap, konopac ili uže — koja je razlika?",
+    description:
+      "Šta znače reči kanap, konopac, uže i štrik kada se kupuje juta, i kako izabrati pravi proizvod po debljini.",
+    intro:
+      "Kupci i prodavnice za isti materijal koriste različite reči. Evo šta se najčešće misli pod kojim nazivom — da lakše nađete ono što vam treba.",
+    sections: [
+      {
+        h2: "Kanap",
+        p: [
+          "Najčešći naziv za jutu na metar i za tanji materijal: jutani kanap, kanap od jute, kanap za vezivanje i pakovanje.",
+        ],
+      },
+      {
+        h2: "Konopac",
+        p: [
+          "Obično se koristi za deblji, upleteni kanap namenjen opterećenju: jutani konopac, konopac za penjanje, konopac za ogradu.",
+        ],
+      },
+      {
+        h2: "Uže",
+        p: [
+          "Najčešće za sport, nautiku i penjanje: uže za penjanje, uže za nadvlačenje, brodsko uže. „Štrik” je kolokvijalan naziv za isto.",
+        ],
+      },
+      {
+        h2: "Šta je zapravo važno",
+        p: [
+          "Naziv je manje važan od debljine i vrste: prirodna ili sintetička juta, i prečnik u milimetrima. Kod nas sve birate po debljini od 1 do 40 mm.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Jutani kanap na metar", href: "/kategorija/kanap-i-tkanina" },
+      { label: "Kanapi za penjanje", href: "/kategorija/sport-i-penjanje" },
+      { label: "Koja debljina kanapa mi treba", href: "/vodic/koja-debljina-jutanog-kanapa" },
+    ],
+    keywords: ["kanap ili konopac", "jutani konopac", "uže od jute", "jutani štrik"],
+    published: "2026-10-23",
+  },
+  {
+    slug: "kako-izabrati-kanap-za-penjanje",
+    title: "Kako izabrati kanap za penjanje",
+    description:
+      "Kanap (uže) za penjanje za decu i odrasle: debljina fi 30 ili fi 40, dužina, kačenje i bezbedna montaža u dvorištu i teretani.",
+    intro:
+      "Kanap za penjanje je jednostavna sprava, ali izbor debljine, dužine i načina kačenja odlučuje koliko će biti prijatan i bezbedan.",
+    sections: [
+      {
+        h2: "Debljina: fi 30 ili fi 40",
+        p: [
+          "Fi 30 je tanji i lakše se obuhvata dečijom šakom — pogodan za decu i dvorišta. Fi 40 je standard za odrasle, teretane i vežbe snage hvata.",
+        ],
+      },
+      {
+        h2: "Dužina",
+        p: [
+          "Merite od mesta kačenja do poda i oduzmite oko 20–30 cm da kanap ne leži na podu. Za decu je kraći kanap sigurniji.",
+        ],
+      },
+      {
+        h2: "Kačenje i bezbednost",
+        p: [
+          "Kanap kačite na nosač predviđen za dinamičko opterećenje (greda, čelična konstrukcija), ispod postavite meku podlogu i redovno proverite mesto kačenja i kanap na habanje. Deca neka se penju uz nadzor.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Kanap za penjanje fi 40", href: "/proizvod/kanap-za-penjanje-fi40" },
+      { label: "Kanap za penjanje fi 30", href: "/proizvod/junior-kanap-za-penjanje-fi30" },
+      { label: "Kanap za dečija igrališta", href: "/primena/kanap-za-decja-igralista" },
+    ],
+    keywords: ["kanap za penjanje", "uže za penjanje", "konopac za penjanje 40 mm", "kanap za penjanje za decu"],
+    published: "2026-10-23",
+  },
+  {
+    slug: "bozicna-dekoracija-od-jute",
+    title: "Božićna i novogodišnja dekoracija od jute",
+    description:
+      "Ideje za božićnu i novogodišnju dekoraciju od jute: pakovanje poklona, ukrasi za jelku, stolovi i venci od jutane trake i kanapa.",
+    intro:
+      "Juta je savršena za praznike: prirodna, topla i jednostavna za rad. Sa malo trake, kanapa i džakčića dobijate dekor u rustičnom stilu.",
+    sections: [
+      {
+        h2: "Pakovanje poklona",
+        p: [
+          "Poklone zamotajte u papir i vežite tankim jutanim kanapom, ili ih spakujte u jutane džakčiće. Uz grančicu bora izgleda kao iz kataloga.",
+        ],
+      },
+      {
+        h2: "Ukrasi i stolovi",
+        p: [
+          "Od juta trake napravite mašne za jelku i venac na vratima. Jutano platno kao staza preko stola i jutani podmetači daju prazničnoj trpezi toplinu.",
+        ],
+      },
+      {
+        h2: "Na vreme",
+        p: [
+          "Pred praznike je najveća potražnja za trakama i džakčićima — poručite ranije, naročito za veće količine.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Juta za venčanja i pakovanje poklona", href: "/primena/juta-za-vencanja-i-poklone" },
+      { label: "Juta traka u boji", href: "/proizvod/juta-traka-u-boji" },
+      { label: "Jutani džakčići i vreće", href: "/proizvod/jutani-dzakcici-i-vrece" },
+    ],
+    keywords: ["božićna dekoracija od jute", "novogodišnja dekoracija", "juta traka", "pakovanje poklona juta"],
+    published: "2026-10-23",
   },
 ];
 

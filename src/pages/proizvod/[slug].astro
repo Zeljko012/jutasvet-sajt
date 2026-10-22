@@ -2,6 +2,8 @@
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import ProductCard from "../../components/ProductCard.astro";
+import FaqBlock from "../../components/FaqBlock.astro";
+import { productFaqs } from "../../data/product-faq";
 import { SITE } from "../../data/site";
 import {
   PRODUCTS,
@@ -72,6 +74,7 @@ if (!p.onRequest) {
 }
 
 const specs = p.specs;
+const faqs = productFaqs(p);
 const startPrice = single ? (p.onRequest ? "Cena na upit" : money(single.price)) : priceFromLabel(p, money);
 ---
 
@@ -251,6 +254,7 @@ const startPrice = single ? (p.onRequest ? "Cena na upit" : money(single.price))
         <h2>O proizvodu</h2>
         <p>{p.lead}</p>
         {p.description.map((t) => <p>{t}</p>)}
+        {p.aka && <p>Poznat i kao: {p.aka}.</p>}
         <p>
           Treba vam drugačija dužina, debljina ili izrada po meri? Javite nam se na{" "}
           <a href={`mailto:${SITE.email}`}>{SITE.email}</a> ili <a href={SITE.phoneHref}>{SITE.phone}</a>.
@@ -266,6 +270,14 @@ const startPrice = single ? (p.onRequest ? "Cena na upit" : money(single.price))
         </ul>
       </div>
     </section>
+
+    {
+      faqs.length > 0 && (
+        <div class="pfaq">
+          <FaqBlock faqs={faqs} heading={`Česta pitanja — ${p.name}`} />
+        </div>
+      )
+    }
 
     <section class="section">
       <div class="section-head">
@@ -566,6 +578,9 @@ const startPrice = single ? (p.onRequest ? "Cena na upit" : money(single.price))
   }
   .desc__col a {
     color: var(--accent);
+  }
+  .pfaq {
+    padding-bottom: 1rem;
   }
   .why {
     margin: 0;

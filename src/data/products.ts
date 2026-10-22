@@ -46,6 +46,8 @@ export interface Product {
   onRequest: boolean;
   lead: string;
   forWhom: string;
+  /** drugi nazivi pod kojima se proizvod traži (npr. "jutani konopac, uže od jute") */
+  aka: string;
   /** pasusi opisa iz Shopify-ja */
   description: string[];
   /** npr. "Materijal: 100% prirodna juta" */
@@ -1632,7 +1634,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Prirodni jutani kanap (natur), slika 11"
       }
     ],
-    "seoTitle": "Prirodni jutani kanap — cena po metru | Juta Svet",
+    "seoTitle": "Jutani kanap na metar 4–40 mm — prirodni konopac od jute, cena",
+    "aka": "jutani konopac, juta kanap, uže od jute ili jutani štrik",
     "seoDescription": "Prirodni jutani kanap od 4 do 40 mm, sečen na dužinu koju izaberete — za dekoraciju, ograde, grebalice, pakovanje i zanatske radove. Od 100 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -2557,7 +2560,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Sintetički jutani kanap, slika 3"
       }
     ],
-    "seoTitle": "Sintetički jutani kanap — cena po metru | Juta Svet",
+    "seoTitle": "Sintetička juta — kanap i uže za spoljnu upotrebu, cena po metru",
+    "aka": "sintetički konopac ili uže za spoljnu upotrebu",
     "seoDescription": "Izgleda kao prirodna juta, a ne upija vodu i ne truli — pravi izbor za ograde, terase, bašte i sve što stoji napolju. Od 200 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -4050,7 +4054,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutani kanap u boji — Juta Svet"
       }
     ],
-    "seoTitle": "Jutani kanap u boji — cena po metru | Juta Svet",
+    "seoTitle": "Jutani kanap u boji na metar 4–30 mm — cena",
+    "aka": "obojeni jutani konopac ili juta kanap u boji",
     "seoDescription": "Jutani kanap u boji, od 4 do 30 mm — isti prirodan materijal, sa tonom koji se uklapa u vaš enterijer ili projekat. Od 150 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -4094,7 +4099,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Juta klupče 2,5 mm — Juta Svet"
       }
     ],
-    "seoTitle": "Juta klube 2.5mm — klupče 40m | Juta Svet",
+    "seoTitle": "Juta klupče 2,5 mm, 40 m — tanki jutani kanap",
+    "aka": "tanki jutani kanap ili kanap za vezivanje",
     "seoDescription": "Juta klupče 2,5 mm: Klupče prirodnog jutanog kanapa debljine 2,5 mm i dužine 40 metara — uvek pri ruci za vezivanje i pakovanje. 200 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4138,7 +4144,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Juta klupče 1 mm — Juta Svet"
       }
     ],
-    "seoTitle": "Juta klube 1mm — klupče 100m | Juta Svet",
+    "seoTitle": "Juta klupče 1 mm, 100 m — kanap za pakovanje",
+    "aka": "tanki kanap za pakovanje ili kanap za etikete",
     "seoDescription": "Juta klupče 1 mm: Tanki jutani kanap od 1 mm, 100 metara u klupčetu — za fino vezivanje, etikete i ukrasno pakovanje. 150 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4177,7 +4184,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Juta 3 snopa — Juta Svet"
       }
     ],
-    "seoTitle": "Juta 3 snopa — prirodni jutani kanap | Juta Svet",
+    "seoTitle": "Juta 3 snopa — upleteni jutani konopac",
+    "aka": "upleteni jutani konopac ili uže od jute",
     "seoDescription": "Juta 3 snopa: Klasični jutani kanap upleten od tri snopa — prepoznatljiva spirala i prirodna nijansa. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4216,7 +4224,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Juta 4 snopa — Juta Svet"
       }
     ],
-    "seoTitle": "Juta 4 snopa — prirodni jutani kanap | Juta Svet",
+    "seoTitle": "Juta 4 snopa — čvrst jutani konopac",
+    "aka": "jutani konopac od četiri snopa ili uže od jute",
     "seoDescription": "Juta 4 snopa: Čvrst jutani kanap upleten od četiri snopa — ravnomeran, gust i otporan na habanje. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4361,7 +4370,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutano platno — Juta Svet"
       }
     ],
-    "seoTitle": "Jutano platno 400 RSD/m² — prirodna tkanina | Juta Svet",
+    "seoTitle": "Jutano platno — tkanina od jute, širina 1,15 m",
+    "aka": "jutana tkanina ili platno od jute",
     "seoDescription": "Jutano platno: Jutano platno od 100% prirodne jute, širine 1,15 m — za torbe, presvlake, dekoraciju i zanatske radove. Od 400 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4497,7 +4507,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Juta traka u boji — Juta Svet"
       }
     ],
-    "seoTitle": "Juta traka u boji — po metru | Juta Svet",
+    "seoTitle": "Juta traka u boji — jutana traka 5–20 cm",
+    "aka": "jutana traka, traka od jute ili ukrasna juta traka",
     "seoDescription": "Juta traka u boji: Tkana jutana traka u boji, širine od 5 do 20 cm — za pakovanje poklona, aranžmane i dekoraciju stola. Od 100 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4573,7 +4584,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Bokobrani rustični, slika 2"
       }
     ],
-    "seoTitle": "Bokobrani rustični od jute — nautički dekor | Juta Svet",
+    "seoTitle": "Bokobrani od jute — ručno pleteni, nautički dekor",
+    "aka": "",
     "seoDescription": "Ručno pleteni jutani bokobrani — funkcionalni na brodu, a dekorativni na terasi, u kafani ili rustičnom enterijeru. Od 5.000 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -4709,7 +4721,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Kanap za penjanje fi40 — sa čeličnom alkom — Juta Svet"
       }
     ],
-    "seoTitle": "Kanap za penjanje fi40 sa čeličnom alkom | Juta Svet",
+    "seoTitle": "Kanap za penjanje fi 40 — uže za penjanje sa alkom",
+    "aka": "uže za penjanje, konopac za penjanje ili CrossFit uže",
     "seoDescription": "Debeo jutani kanap za penjanje (fi 40) sa čeličnom alkom za kačenje — spreman za dvorište, teretanu ili igralište. Od 2.500 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -4849,7 +4862,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Junior kanap za penjanje fi30 — bez čvorova, slika 2"
       }
     ],
-    "seoTitle": "Junior kanap za penjanje fi30 — bez čvorova | Juta Svet",
+    "seoTitle": "Kanap za penjanje fi 30 za decu — uže bez čvorova",
+    "aka": "dečije uže za penjanje ili konopac za penjanje",
     "seoDescription": "Kanap za penjanje fi 30 bez čvorova, prilagođen dečijoj ruci — za dvorište, igralište i dečiju sobu. Od 1.500 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -4907,7 +4921,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Mreža za penjanje i zaštitna mreža, slika 5"
       }
     ],
-    "seoTitle": "Mreža za penjanje i zaštitna mreža od jute | Juta Svet",
+    "seoTitle": "Mreža za penjanje i zaštitna mreža od kanapa, po meri",
+    "aka": "mreža od kanapa, mreža od užeta ili mreža za igralište",
     "seoDescription": "Jutana mreža za penjanje ili zaštitu, pletena po meri — debljina kanapa, veličina okca i kačenje prema vašoj konstrukciji. 5.000 RSD · dostava po Srbiji.",
     "featured": true,
     "bestseller": false,
@@ -5054,7 +5069,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Brodske merdevine — Juta Svet"
       }
     ],
-    "seoTitle": "Brodske merdevine za decu od jute | Juta Svet",
+    "seoTitle": "Brodske merdevine od kanapa — za decu, dvorište i čamac",
+    "aka": "merdevine od kanapa, merdevine od užeta ili merdevine za čamac",
     "seoDescription": "Brodske merdevine: Brodske merdevine od jutanog kanapa i drvenih prečki, dužine od 1 do 10 metara. Od 2.500 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -5122,7 +5138,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Monkey bar kanap, slika 2"
       }
     ],
-    "seoTitle": "Monkey bar kanap fi35-40, dužina 50cm | Juta Svet",
+    "seoTitle": "Monkey bar kanap 35–40 mm — jutano uže za fitnes",
+    "aka": "uže za monkey bar ili kanap za ninja stazu",
     "seoDescription": "Monkey bar kanap: Jutani kanap za monkey bar, debljine 35–40 mm i dužine 50 cm — sa kuglom na kraju ili bez nje. Od 1.500 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5193,7 +5210,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutani tabure, slika 4"
       }
     ],
-    "seoTitle": "Jutani tabure — okrugli puf od jute | Juta Svet",
+    "seoTitle": "Jutani tabure — okrugli puf od jute, M i XL",
+    "aka": "",
     "seoDescription": "Jutani tabure: Okrugli tabure obmotan prirodnom jutom — sedište, oslonac za noge ili mali stočić, u veličini M ili XL. Od 9.000 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -5239,7 +5257,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Pletena stolica — drvo i juta, slika 2"
       }
     ],
-    "seoTitle": "Stolica pletena — drvo i juta | Juta Svet",
+    "seoTitle": "Pletena stolica od jute i drveta",
+    "aka": "",
     "seoDescription": "Pletena stolica — drvo i juta: Drvena stolica sa sedištem i naslonom ručno pletenim od jute — čvrsta, topla i prirodna. 15.000 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5282,7 +5301,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Klub sto — juta — Juta Svet"
       }
     ],
-    "seoTitle": "Klub sto od jute — rustičan niski sto | Juta Svet",
+    "seoTitle": "Klub sto od jute — okrugli niski sto",
+    "aka": "",
     "seoDescription": "Klub sto — juta: Niski okrugli klub sto sa jutanim omotačem — centralni komad dnevne sobe ili terase. 18.000 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5325,7 +5345,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Ljuljaška Gospodar prstenova — Juta Svet"
       }
     ],
-    "seoTitle": "Ljuljaška Gospodar prstenova — drvo i juta | Juta Svet",
+    "seoTitle": "Okrugla ljuljaška za dvorište — drvo i juta",
+    "aka": "",
     "seoDescription": "Okrugla ljuljaška sa drvenim prstenom i jutanim kanapom — unikatna forma koja privlači pogled u svakom dvorištu. 25.000 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": true,
@@ -5372,7 +5393,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Ljuljaška basic — drvo i juta, slika 2"
       }
     ],
-    "seoTitle": "Ljuljaška basic — drvo i juta | Juta Svet",
+    "seoTitle": "Ljuljaška za dvorište od drveta i jutanog užeta",
+    "aka": "",
     "seoDescription": "Ljuljaška basic — drvo i juta: Klasična drvena ljuljaška na jutanom kanapu — jednostavna, čvrsta i spremna za kačenje. 5.000 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5757,7 +5779,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutana visilica sa el. kablom — Juta Svet"
       }
     ],
-    "seoTitle": "Jutana visilica sa el. kablom — po metru | Juta Svet",
+    "seoTitle": "Jutani kanap sa el. kablom — visilica po metru",
+    "aka": "tekstilni kabl od jute ili kanap sa kablom za lampe",
     "seoDescription": "Jutani kanap sa ugrađenim električnim kablom, spreman za montažu viseće rasvete — debljine fi 25, 30 ili 40. Od 900 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5847,7 +5870,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutana visilica, slika 5"
       }
     ],
-    "seoTitle": "Jutana visilica — rustična viseća lampa | Juta Svet",
+    "seoTitle": "Jutana visilica — viseća lampa od kanapa",
+    "aka": "visilica od jute ili lampa od kanapa",
     "seoDescription": "Jutana visilica: Rustična viseća lampa od jutanog kanapa — jednostruka, dupla ili trostruka. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5890,7 +5914,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutani luster — Juta Svet"
       }
     ],
-    "seoTitle": "Jutani luster — rustična rasveta | Juta Svet",
+    "seoTitle": "Jutani luster — luster od kanapa, rustična rasveta",
+    "aka": "luster od kanapa ili luster od užeta",
     "seoDescription": "Jutani luster: Višekraki luster od prirodnog jutanog kanapa — topla, autentična svetlost za veće prostorije. Cena na upit · dostava po Srbiji.",
     "featured": true,
     "bestseller": false,
@@ -5929,7 +5954,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Zidni panel od pletenog kanapa — Juta Svet"
       }
     ],
-    "seoTitle": "Zidna dekoracija — pleteni panel od kanapa | Juta Svet",
+    "seoTitle": "Zidna dekoracija od kanapa — pleteni panel po meri",
+    "aka": "",
     "seoDescription": "Zidni panel od pletenog kanapa: Zidni panel od pletenog kanapa sa geometrijskim šarama — izrađuje se po meri vašeg zida. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -5972,7 +5998,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Plafonska dekoracija od kanapa, slika 2"
       }
     ],
-    "seoTitle": "Plafonska dekoracija od kanapa — vertikalne linije | Juta Svet",
+    "seoTitle": "Plafonska dekoracija od kanapa — za kafane i lokale",
+    "aka": "",
     "seoDescription": "Plafonska dekoracija od kanapa: Plafonska instalacija od vertikalnih linija jutanog kanapa — menja prostor bez građevinskih radova. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -6050,7 +6077,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutani podmetač, slika 3"
       }
     ],
-    "seoTitle": "Jutani podmetač — pleteni okrugli | Juta Svet",
+    "seoTitle": "Jutani podmetači za čaše i tanjire",
+    "aka": "",
     "seoDescription": "Jutani podmetač: Pleteni jutani podmetači za čaše i tanjire — štite sto i daju trpezi prirodnu notu. Od 150 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -6142,7 +6170,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Jutani džakčići i vreće — Juta Svet"
       }
     ],
-    "seoTitle": "Jutani džakčići i vreće — prirodna boja | Juta Svet",
+    "seoTitle": "Jutani džakčići i vreće — za pakovanje poklona",
+    "aka": "",
     "seoDescription": "Jutani džakčići i vreće: Jutani džakčići i vreće u pet veličina — za pakovanje poklona, suvenire, kafu i dekoraciju. Od 100 RSD · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -6183,7 +6212,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Šilo za kanap, slika 2"
       }
     ],
-    "seoTitle": "Šilo za rad sa jutanim kanapom | Juta Svet",
+    "seoTitle": "Šilo za kanap — alat za pletenje i spajanje",
+    "aka": "",
     "seoDescription": "Šilo za kanap: Šilo za provlačenje i spajanje kanapa — nezamenljiv alat za pletenje i završne radove. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -6224,7 +6254,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Metalna suza za kanap, slika 2"
       }
     ],
-    "seoTitle": "Metalna suza za jutani kanap | Juta Svet",
+    "seoTitle": "Metalna suza (kaus) za kanap i uže",
+    "aka": "",
     "seoDescription": "Metalna suza za kanap: Metalna suza (kaus) štiti omču kanapa od habanja i daje čvrst, uredan završetak. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,
@@ -6261,7 +6292,8 @@ export const PRODUCTS: Product[] = [
         "alt": "Metalna alka za kanap — Juta Svet"
       }
     ],
-    "seoTitle": "Metalna alka za jutani kanap | Juta Svet",
+    "seoTitle": "Metalna alka za kanap i uže",
+    "aka": "",
     "seoDescription": "Metalna alka za kanap: Metalna alka za kačenje i spajanje jutanog kanapa — za ljuljaške, rasvetu i dekoracije. Cena na upit · dostava po Srbiji.",
     "featured": false,
     "bestseller": false,

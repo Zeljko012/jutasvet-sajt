@@ -220,6 +220,64 @@ const COPY = {
   },
 };
 
+/**
+ * SEO naslovi (<title>, bez " | Juta Svet" — dodaje se sam). Pokrivaju reči koje kupci
+ * stvarno kucaju: kanap / konopac / uže, debljine, „cena", „na metar" (v. docs/seo-istrazivanje.md).
+ */
+const SEO_TITLE = {
+  "prirodna-juta-cena-po-metru": "Jutani kanap na metar 4–40 mm — prirodni konopac od jute, cena",
+  "sinteticka-juta-cena-po-metru": "Sintetička juta — kanap i uže za spoljnu upotrebu, cena po metru",
+  "jutani-kanap-u-boji-cena-po-metru": "Jutani kanap u boji na metar 4–30 mm — cena",
+  "juta-klube-2-5mm": "Juta klupče 2,5 mm, 40 m — tanki jutani kanap",
+  "juta-klube-1kg": "Juta klupče 1 mm, 100 m — kanap za pakovanje",
+  "juta-3-snopa": "Juta 3 snopa — upleteni jutani konopac",
+  "juta-4-snopa": "Juta 4 snopa — čvrst jutani konopac",
+  "jutano-platno-400-rsd-m": "Jutano platno — tkanina od jute, širina 1,15 m",
+  "juta-traka-u-boji-cena-po-metru-1": "Juta traka u boji — jutana traka 5–20 cm",
+  "bokobrani-rusticni": "Bokobrani od jute — ručno pleteni, nautički dekor",
+  "kanap-za-penjanje-fi40": "Kanap za penjanje fi 40 — uže za penjanje sa alkom",
+  "junior-kanap-za-penjanje-fi30": "Kanap za penjanje fi 30 za decu — uže bez čvorova",
+  "mreza-za-penjanje-zastitna-mreza": "Mreža za penjanje i zaštitna mreža od kanapa, po meri",
+  "merdevine-za-decu-brodske-merdevine": "Brodske merdevine od kanapa — za decu, dvorište i čamac",
+  "monkey-bar-rope": "Monkey bar kanap 35–40 mm — jutano uže za fitnes",
+  "jutani-tabure": "Jutani tabure — okrugli puf od jute, M i XL",
+  "stolica-pletena-drvo-i-juta": "Pletena stolica od jute i drveta",
+  "klub-sto-juta": "Klub sto od jute — okrugli niski sto",
+  "ljuljaska-okrugla-drvo-i-juta": "Okrugla ljuljaška za dvorište — drvo i juta",
+  "ljuljaska-basic-drvo-i-juta": "Ljuljaška za dvorište od drveta i jutanog užeta",
+  "jutana-visilica-sa-el-kablom": "Jutani kanap sa el. kablom — visilica po metru",
+  "jutana-visilica": "Jutana visilica — viseća lampa od kanapa",
+  "jutani-luster": "Jutani luster — luster od kanapa, rustična rasveta",
+  "zidna-dekoracija-pleteni-panel-od-kanapa": "Zidna dekoracija od kanapa — pleteni panel po meri",
+  "plafonska-dekoracija-od-kanapa-vertikalne-linije": "Plafonska dekoracija od kanapa — za kafane i lokale",
+  "jutani-podmetac": "Jutani podmetači za čaše i tanjire",
+  "jutani-dzakcici-i-vrece-prirodna-boja": "Jutani džakčići i vreće — za pakovanje poklona",
+  "silo-za-kanap": "Šilo za kanap — alat za pletenje i spajanje",
+  "metalna-suza-za-kanap": "Metalna suza (kaus) za kanap i uže",
+  "metalna-alka-za-kanap": "Metalna alka za kanap i uže",
+};
+
+/** Drugi nazivi pod kojima kupci traže proizvod (rečenica u opisu proizvoda). */
+const AKA = {
+  "prirodna-juta-cena-po-metru": "jutani konopac, juta kanap, uže od jute ili jutani štrik",
+  "sinteticka-juta-cena-po-metru": "sintetički konopac ili uže za spoljnu upotrebu",
+  "jutani-kanap-u-boji-cena-po-metru": "obojeni jutani konopac ili juta kanap u boji",
+  "juta-klube-2-5mm": "tanki jutani kanap ili kanap za vezivanje",
+  "juta-klube-1kg": "tanki kanap za pakovanje ili kanap za etikete",
+  "juta-3-snopa": "upleteni jutani konopac ili uže od jute",
+  "juta-4-snopa": "jutani konopac od četiri snopa ili uže od jute",
+  "jutano-platno-400-rsd-m": "jutana tkanina ili platno od jute",
+  "juta-traka-u-boji-cena-po-metru-1": "jutana traka, traka od jute ili ukrasna juta traka",
+  "kanap-za-penjanje-fi40": "uže za penjanje, konopac za penjanje ili CrossFit uže",
+  "junior-kanap-za-penjanje-fi30": "dečije uže za penjanje ili konopac za penjanje",
+  "merdevine-za-decu-brodske-merdevine": "merdevine od kanapa, merdevine od užeta ili merdevine za čamac",
+  "mreza-za-penjanje-zastitna-mreza": "mreža od kanapa, mreža od užeta ili mreža za igralište",
+  "monkey-bar-rope": "uže za monkey bar ili kanap za ninja stazu",
+  "jutani-luster": "luster od kanapa ili luster od užeta",
+  "jutana-visilica": "visilica od jute ili lampa od kanapa",
+  "jutana-visilica-sa-el-kablom": "tekstilni kabl od jute ili kanap sa kablom za lampe",
+};
+
 const BESTSELLER = [
   "prirodna-juta-cena-po-metru",
   "sinteticka-juta-cena-po-metru",
@@ -396,7 +454,8 @@ for (const p of raw) {
     options: options.map((o) => ({ name: o.name, values: o.values })),
     variants: outVariants,
     images,
-    seoTitle: (p.seo_title || `${name} | Juta Svet`).replace(/\s+/g, " ").trim(),
+    seoTitle: (SEO_TITLE[p.handle] || p.seo_title || `${name} | Juta Svet`).replace(/\s+/g, " ").trim(),
+    aka: AKA[p.handle] ?? "",
     seoDescription,
     featured: FEATURED.has(p.handle),
     bestseller: BESTSELLER.includes(p.handle),
@@ -462,6 +521,8 @@ export interface Product {
   onRequest: boolean;
   lead: string;
   forWhom: string;
+  /** drugi nazivi pod kojima se proizvod traži (npr. "jutani konopac, uže od jute") */
+  aka: string;
   /** pasusi opisa iz Shopify-ja */
   description: string[];
   /** npr. "Materijal: 100% prirodna juta" */
