@@ -337,6 +337,16 @@ p {
   border-top: 1px solid var(--line);
   padding-top: 1.1rem;
   margin-bottom: clamp(1.4rem, 4vw, 2.2rem);
+  flex-wrap: wrap;
+}
+.section-head h2 {
+  min-width: 0;
+}
+@media (max-width: 560px) {
+  .section-head a {
+    white-space: normal;
+    line-height: 1.4;
+  }
 }
 .section-head h2 {
   font-size: var(--step-3);

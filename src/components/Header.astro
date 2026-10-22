@@ -245,9 +245,12 @@ const isActive = (href: string) => isCurrentPath(path, href);
     border-bottom: none !important;
   }
   .mobile-nav__secondary {
-    display: flex;
-    gap: 0.6rem;
-    padding-top: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+    margin-top: 0.9rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line);
   }
   .mobile-nav__secondary .nav__pill {
     flex: 1;
