@@ -1,0 +1,2957 @@
+{
+ "version": 194741410,
+ "products": [
+  {
+   "slug": "prirodna-juta",
+   "name": "Prirodni jutani kanap (natur)",
+   "category": "kanap-i-tkanina",
+   "price": 100,
+   "colors": [
+    {
+     "key": "4mm · 5m",
+     "label": "4mm",
+     "size": "5m",
+     "price": 100
+    },
+    {
+     "key": "4mm · 10m",
+     "label": "4mm",
+     "size": "10m",
+     "price": 200
+    },
+    {
+     "key": "4mm · 15m",
+     "label": "4mm",
+     "size": "15m",
+     "price": 300
+    },
+    {
+     "key": "4mm · 20m",
+     "label": "4mm",
+     "size": "20m",
+     "price": 400
+    },
+    {
+     "key": "4mm · 25m",
+     "label": "4mm",
+     "size": "25m",
+     "price": 500
+    },
+    {
+     "key": "4mm · 30m",
+     "label": "4mm",
+     "size": "30m",
+     "price": 600
+    },
+    {
+     "key": "4mm · 35m",
+     "label": "4mm",
+     "size": "35m",
+     "price": 700
+    },
+    {
+     "key": "4mm · 40m",
+     "label": "4mm",
+     "size": "40m",
+     "price": 800
+    },
+    {
+     "key": "4mm · 45m",
+     "label": "4mm",
+     "size": "45m",
+     "price": 900
+    },
+    {
+     "key": "4mm · 50m",
+     "label": "4mm",
+     "size": "50m",
+     "price": 1000
+    },
+    {
+     "key": "4mm · 60m",
+     "label": "4mm",
+     "size": "60m",
+     "price": 1200
+    },
+    {
+     "key": "4mm · 80m",
+     "label": "4mm",
+     "size": "80m",
+     "price": 1600
+    },
+    {
+     "key": "4mm · 100m",
+     "label": "4mm",
+     "size": "100m",
+     "price": 2000
+    },
+    {
+     "key": "6mm · 5m",
+     "label": "6mm",
+     "size": "5m",
+     "price": 150
+    },
+    {
+     "key": "6mm · 10m",
+     "label": "6mm",
+     "size": "10m",
+     "price": 300
+    },
+    {
+     "key": "6mm · 15m",
+     "label": "6mm",
+     "size": "15m",
+     "price": 450
+    },
+    {
+     "key": "6mm · 20m",
+     "label": "6mm",
+     "size": "20m",
+     "price": 600
+    },
+    {
+     "key": "6mm · 25m",
+     "label": "6mm",
+     "size": "25m",
+     "price": 750
+    },
+    {
+     "key": "6mm · 30m",
+     "label": "6mm",
+     "size": "30m",
+     "price": 900
+    },
+    {
+     "key": "6mm · 35m",
+     "label": "6mm",
+     "size": "35m",
+     "price": 1050
+    },
+    {
+     "key": "6mm · 40m",
+     "label": "6mm",
+     "size": "40m",
+     "price": 1200
+    },
+    {
+     "key": "6mm · 45m",
+     "label": "6mm",
+     "size": "45m",
+     "price": 1350
+    },
+    {
+     "key": "6mm · 50m",
+     "label": "6mm",
+     "size": "50m",
+     "price": 1500
+    },
+    {
+     "key": "6mm · 60m",
+     "label": "6mm",
+     "size": "60m",
+     "price": 1800
+    },
+    {
+     "key": "6mm · 80m",
+     "label": "6mm",
+     "size": "80m",
+     "price": 2400
+    },
+    {
+     "key": "6mm · 100m",
+     "label": "6mm",
+     "size": "100m",
+     "price": 3000
+    },
+    {
+     "key": "8mm · 5m",
+     "label": "8mm",
+     "size": "5m",
+     "price": 200
+    },
+    {
+     "key": "8mm · 10m",
+     "label": "8mm",
+     "size": "10m",
+     "price": 400
+    },
+    {
+     "key": "8mm · 15m",
+     "label": "8mm",
+     "size": "15m",
+     "price": 600
+    },
+    {
+     "key": "8mm · 20m",
+     "label": "8mm",
+     "size": "20m",
+     "price": 800
+    },
+    {
+     "key": "8mm · 25m",
+     "label": "8mm",
+     "size": "25m",
+     "price": 1000
+    },
+    {
+     "key": "8mm · 30m",
+     "label": "8mm",
+     "size": "30m",
+     "price": 1200
+    },
+    {
+     "key": "8mm · 35m",
+     "label": "8mm",
+     "size": "35m",
+     "price": 1400
+    },
+    {
+     "key": "8mm · 40m",
+     "label": "8mm",
+     "size": "40m",
+     "price": 1600
+    },
+    {
+     "key": "8mm · 45m",
+     "label": "8mm",
+     "size": "45m",
+     "price": 1800
+    },
+    {
+     "key": "8mm · 50m",
+     "label": "8mm",
+     "size": "50m",
+     "price": 2000
+    },
+    {
+     "key": "8mm · 60m",
+     "label": "8mm",
+     "size": "60m",
+     "price": 2400
+    },
+    {
+     "key": "8mm · 80m",
+     "label": "8mm",
+     "size": "80m",
+     "price": 3200
+    },
+    {
+     "key": "8mm · 100m",
+     "label": "8mm",
+     "size": "100m",
+     "price": 4000
+    },
+    {
+     "key": "10mm · 5m",
+     "label": "10mm",
+     "size": "5m",
+     "price": 250
+    },
+    {
+     "key": "10mm · 10m",
+     "label": "10mm",
+     "size": "10m",
+     "price": 500
+    },
+    {
+     "key": "10mm · 15m",
+     "label": "10mm",
+     "size": "15m",
+     "price": 750
+    },
+    {
+     "key": "10mm · 20m",
+     "label": "10mm",
+     "size": "20m",
+     "price": 1000
+    },
+    {
+     "key": "10mm · 25m",
+     "label": "10mm",
+     "size": "25m",
+     "price": 1250
+    },
+    {
+     "key": "10mm · 30m",
+     "label": "10mm",
+     "size": "30m",
+     "price": 1500
+    },
+    {
+     "key": "10mm · 35m",
+     "label": "10mm",
+     "size": "35m",
+     "price": 1750
+    },
+    {
+     "key": "10mm · 40m",
+     "label": "10mm",
+     "size": "40m",
+     "price": 2000
+    },
+    {
+     "key": "10mm · 45m",
+     "label": "10mm",
+     "size": "45m",
+     "price": 2250
+    },
+    {
+     "key": "10mm · 50m",
+     "label": "10mm",
+     "size": "50m",
+     "price": 2500
+    },
+    {
+     "key": "10mm · 60m",
+     "label": "10mm",
+     "size": "60m",
+     "price": 3000
+    },
+    {
+     "key": "10mm · 80m",
+     "label": "10mm",
+     "size": "80m",
+     "price": 4000
+    },
+    {
+     "key": "10mm · 100m",
+     "label": "10mm",
+     "size": "100m",
+     "price": 5000
+    },
+    {
+     "key": "12mm · 5m",
+     "label": "12mm",
+     "size": "5m",
+     "price": 350
+    },
+    {
+     "key": "12mm · 10m",
+     "label": "12mm",
+     "size": "10m",
+     "price": 700
+    },
+    {
+     "key": "12mm · 15m",
+     "label": "12mm",
+     "size": "15m",
+     "price": 1050
+    },
+    {
+     "key": "12mm · 20m",
+     "label": "12mm",
+     "size": "20m",
+     "price": 1400
+    },
+    {
+     "key": "12mm · 25m",
+     "label": "12mm",
+     "size": "25m",
+     "price": 1750
+    },
+    {
+     "key": "12mm · 30m",
+     "label": "12mm",
+     "size": "30m",
+     "price": 2100
+    },
+    {
+     "key": "12mm · 35m",
+     "label": "12mm",
+     "size": "35m",
+     "price": 2450
+    },
+    {
+     "key": "12mm · 40m",
+     "label": "12mm",
+     "size": "40m",
+     "price": 2800
+    },
+    {
+     "key": "12mm · 45m",
+     "label": "12mm",
+     "size": "45m",
+     "price": 3150
+    },
+    {
+     "key": "12mm · 50m",
+     "label": "12mm",
+     "size": "50m",
+     "price": 3500
+    },
+    {
+     "key": "12mm · 60m",
+     "label": "12mm",
+     "size": "60m",
+     "price": 4200
+    },
+    {
+     "key": "12mm · 80m",
+     "label": "12mm",
+     "size": "80m",
+     "price": 5600
+    },
+    {
+     "key": "12mm · 100m",
+     "label": "12mm",
+     "size": "100m",
+     "price": 7000
+    },
+    {
+     "key": "16mm · 5m",
+     "label": "16mm",
+     "size": "5m",
+     "price": 600
+    },
+    {
+     "key": "16mm · 10m",
+     "label": "16mm",
+     "size": "10m",
+     "price": 1200
+    },
+    {
+     "key": "16mm · 15m",
+     "label": "16mm",
+     "size": "15m",
+     "price": 1800
+    },
+    {
+     "key": "16mm · 20m",
+     "label": "16mm",
+     "size": "20m",
+     "price": 2400
+    },
+    {
+     "key": "16mm · 25m",
+     "label": "16mm",
+     "size": "25m",
+     "price": 3000
+    },
+    {
+     "key": "16mm · 30m",
+     "label": "16mm",
+     "size": "30m",
+     "price": 3600
+    },
+    {
+     "key": "16mm · 35m",
+     "label": "16mm",
+     "size": "35m",
+     "price": 4200
+    },
+    {
+     "key": "16mm · 40m",
+     "label": "16mm",
+     "size": "40m",
+     "price": 4800
+    },
+    {
+     "key": "16mm · 45m",
+     "label": "16mm",
+     "size": "45m",
+     "price": 5400
+    },
+    {
+     "key": "16mm · 50m",
+     "label": "16mm",
+     "size": "50m",
+     "price": 6000
+    },
+    {
+     "key": "16mm · 60m",
+     "label": "16mm",
+     "size": "60m",
+     "price": 7200
+    },
+    {
+     "key": "16mm · 80m",
+     "label": "16mm",
+     "size": "80m",
+     "price": 9600
+    },
+    {
+     "key": "16mm · 100m",
+     "label": "16mm",
+     "size": "100m",
+     "price": 12000
+    },
+    {
+     "key": "20mm · 5m",
+     "label": "20mm",
+     "size": "5m",
+     "price": 850
+    },
+    {
+     "key": "20mm · 10m",
+     "label": "20mm",
+     "size": "10m",
+     "price": 1700
+    },
+    {
+     "key": "20mm · 15m",
+     "label": "20mm",
+     "size": "15m",
+     "price": 2550
+    },
+    {
+     "key": "20mm · 20m",
+     "label": "20mm",
+     "size": "20m",
+     "price": 3400
+    },
+    {
+     "key": "20mm · 25m",
+     "label": "20mm",
+     "size": "25m",
+     "price": 4250
+    },
+    {
+     "key": "20mm · 30m",
+     "label": "20mm",
+     "size": "30m",
+     "price": 5100
+    },
+    {
+     "key": "20mm · 35m",
+     "label": "20mm",
+     "size": "35m",
+     "price": 5950
+    },
+    {
+     "key": "20mm · 40m",
+     "label": "20mm",
+     "size": "40m",
+     "price": 6800
+    },
+    {
+     "key": "20mm · 45m",
+     "label": "20mm",
+     "size": "45m",
+     "price": 7650
+    },
+    {
+     "key": "20mm · 50m",
+     "label": "20mm",
+     "size": "50m",
+     "price": 8500
+    },
+    {
+     "key": "20mm · 60m",
+     "label": "20mm",
+     "size": "60m",
+     "price": 10200
+    },
+    {
+     "key": "20mm · 80m",
+     "label": "20mm",
+     "size": "80m",
+     "price": 13600
+    },
+    {
+     "key": "20mm · 100m",
+     "label": "20mm",
+     "size": "100m",
+     "price": 17000
+    },
+    {
+     "key": "25mm · 5m",
+     "label": "25mm",
+     "size": "5m",
+     "price": 1050
+    },
+    {
+     "key": "25mm · 10m",
+     "label": "25mm",
+     "size": "10m",
+     "price": 2100
+    },
+    {
+     "key": "25mm · 15m",
+     "label": "25mm",
+     "size": "15m",
+     "price": 3150
+    },
+    {
+     "key": "25mm · 20m",
+     "label": "25mm",
+     "size": "20m",
+     "price": 4200
+    },
+    {
+     "key": "25mm · 25m",
+     "label": "25mm",
+     "size": "25m",
+     "price": 5250
+    },
+    {
+     "key": "25mm · 30m",
+     "label": "25mm",
+     "size": "30m",
+     "price": 6300
+    },
+    {
+     "key": "25mm · 35m",
+     "label": "25mm",
+     "size": "35m",
+     "price": 7350
+    },
+    {
+     "key": "25mm · 40m",
+     "label": "25mm",
+     "size": "40m",
+     "price": 8400
+    },
+    {
+     "key": "25mm · 45m",
+     "label": "25mm",
+     "size": "45m",
+     "price": 9450
+    },
+    {
+     "key": "25mm · 50m",
+     "label": "25mm",
+     "size": "50m",
+     "price": 10500
+    },
+    {
+     "key": "25mm · 60m",
+     "label": "25mm",
+     "size": "60m",
+     "price": 12600
+    },
+    {
+     "key": "25mm · 80m",
+     "label": "25mm",
+     "size": "80m",
+     "price": 16800
+    },
+    {
+     "key": "25mm · 100m",
+     "label": "25mm",
+     "size": "100m",
+     "price": 21000
+    },
+    {
+     "key": "30mm · 5m",
+     "label": "30mm",
+     "size": "5m",
+     "price": 1600
+    },
+    {
+     "key": "30mm · 10m",
+     "label": "30mm",
+     "size": "10m",
+     "price": 3200
+    },
+    {
+     "key": "30mm · 15m",
+     "label": "30mm",
+     "size": "15m",
+     "price": 4800
+    },
+    {
+     "key": "30mm · 20m",
+     "label": "30mm",
+     "size": "20m",
+     "price": 6400
+    },
+    {
+     "key": "30mm · 25m",
+     "label": "30mm",
+     "size": "25m",
+     "price": 8000
+    },
+    {
+     "key": "30mm · 30m",
+     "label": "30mm",
+     "size": "30m",
+     "price": 9600
+    },
+    {
+     "key": "30mm · 35m",
+     "label": "30mm",
+     "size": "35m",
+     "price": 11200
+    },
+    {
+     "key": "30mm · 40m",
+     "label": "30mm",
+     "size": "40m",
+     "price": 12800
+    },
+    {
+     "key": "30mm · 45m",
+     "label": "30mm",
+     "size": "45m",
+     "price": 14400
+    },
+    {
+     "key": "30mm · 50m",
+     "label": "30mm",
+     "size": "50m",
+     "price": 16000
+    },
+    {
+     "key": "30mm · 60m",
+     "label": "30mm",
+     "size": "60m",
+     "price": 19200
+    },
+    {
+     "key": "30mm · 80m",
+     "label": "30mm",
+     "size": "80m",
+     "price": 25600
+    },
+    {
+     "key": "30mm · 100m",
+     "label": "30mm",
+     "size": "100m",
+     "price": 32000
+    },
+    {
+     "key": "40mm · 5m",
+     "label": "40mm",
+     "size": "5m",
+     "price": 2400
+    },
+    {
+     "key": "40mm · 10m",
+     "label": "40mm",
+     "size": "10m",
+     "price": 4800
+    },
+    {
+     "key": "40mm · 15m",
+     "label": "40mm",
+     "size": "15m",
+     "price": 7200
+    },
+    {
+     "key": "40mm · 20m",
+     "label": "40mm",
+     "size": "20m",
+     "price": 9600
+    },
+    {
+     "key": "40mm · 25m",
+     "label": "40mm",
+     "size": "25m",
+     "price": 12000
+    },
+    {
+     "key": "40mm · 30m",
+     "label": "40mm",
+     "size": "30m",
+     "price": 14400
+    },
+    {
+     "key": "40mm · 35m",
+     "label": "40mm",
+     "size": "35m",
+     "price": 16800
+    },
+    {
+     "key": "40mm · 40m",
+     "label": "40mm",
+     "size": "40m",
+     "price": 19200
+    },
+    {
+     "key": "40mm · 45m",
+     "label": "40mm",
+     "size": "45m",
+     "price": 21600
+    },
+    {
+     "key": "40mm · 50m",
+     "label": "40mm",
+     "size": "50m",
+     "price": 24000
+    },
+    {
+     "key": "40mm · 60m",
+     "label": "40mm",
+     "size": "60m",
+     "price": 28800
+    },
+    {
+     "key": "40mm · 80m",
+     "label": "40mm",
+     "size": "80m",
+     "price": 38400
+    },
+    {
+     "key": "40mm · 100m",
+     "label": "40mm",
+     "size": "100m",
+     "price": 48000
+    }
+   ],
+   "image": "images/products/prirodna-juta/1.webp"
+  },
+  {
+   "slug": "sinteticka-juta",
+   "name": "Sintetički jutani kanap",
+   "category": "kanap-i-tkanina",
+   "price": 200,
+   "colors": [
+    {
+     "key": "Fi 6 · 5m",
+     "label": "Fi 6",
+     "size": "5m",
+     "price": 200
+    },
+    {
+     "key": "Fi 6 · 10m",
+     "label": "Fi 6",
+     "size": "10m",
+     "price": 400
+    },
+    {
+     "key": "Fi 6 · 15m",
+     "label": "Fi 6",
+     "size": "15m",
+     "price": 600
+    },
+    {
+     "key": "Fi 6 · 20m",
+     "label": "Fi 6",
+     "size": "20m",
+     "price": 800
+    },
+    {
+     "key": "Fi 6 · 25m",
+     "label": "Fi 6",
+     "size": "25m",
+     "price": 1000
+    },
+    {
+     "key": "Fi 6 · 30m",
+     "label": "Fi 6",
+     "size": "30m",
+     "price": 1200
+    },
+    {
+     "key": "Fi 6 · 35m",
+     "label": "Fi 6",
+     "size": "35m",
+     "price": 1400
+    },
+    {
+     "key": "Fi 6 · 40m",
+     "label": "Fi 6",
+     "size": "40m",
+     "price": 1600
+    },
+    {
+     "key": "Fi 6 · 45m",
+     "label": "Fi 6",
+     "size": "45m",
+     "price": 1800
+    },
+    {
+     "key": "Fi 6 · 50m",
+     "label": "Fi 6",
+     "size": "50m",
+     "price": 2000
+    },
+    {
+     "key": "Fi 6 · 60m",
+     "label": "Fi 6",
+     "size": "60m",
+     "price": 2400
+    },
+    {
+     "key": "Fi 6 · 80m",
+     "label": "Fi 6",
+     "size": "80m",
+     "price": 3200
+    },
+    {
+     "key": "Fi 6 · 100m",
+     "label": "Fi 6",
+     "size": "100m",
+     "price": 4000
+    },
+    {
+     "key": "Fi 10 · 5m",
+     "label": "Fi 10",
+     "size": "5m",
+     "price": 450
+    },
+    {
+     "key": "Fi 10 · 10m",
+     "label": "Fi 10",
+     "size": "10m",
+     "price": 900
+    },
+    {
+     "key": "Fi 10 · 15m",
+     "label": "Fi 10",
+     "size": "15m",
+     "price": 1350
+    },
+    {
+     "key": "Fi 10 · 20m",
+     "label": "Fi 10",
+     "size": "20m",
+     "price": 1800
+    },
+    {
+     "key": "Fi 10 · 25m",
+     "label": "Fi 10",
+     "size": "25m",
+     "price": 2250
+    },
+    {
+     "key": "Fi 10 · 30m",
+     "label": "Fi 10",
+     "size": "30m",
+     "price": 2700
+    },
+    {
+     "key": "Fi 10 · 35m",
+     "label": "Fi 10",
+     "size": "35m",
+     "price": 3150
+    },
+    {
+     "key": "Fi 10 · 40m",
+     "label": "Fi 10",
+     "size": "40m",
+     "price": 3600
+    },
+    {
+     "key": "Fi 10 · 45m",
+     "label": "Fi 10",
+     "size": "45m",
+     "price": 4050
+    },
+    {
+     "key": "Fi 10 · 50m",
+     "label": "Fi 10",
+     "size": "50m",
+     "price": 4500
+    },
+    {
+     "key": "Fi 10 · 60m",
+     "label": "Fi 10",
+     "size": "60m",
+     "price": 5400
+    },
+    {
+     "key": "Fi 10 · 80m",
+     "label": "Fi 10",
+     "size": "80m",
+     "price": 7200
+    },
+    {
+     "key": "Fi 10 · 100m",
+     "label": "Fi 10",
+     "size": "100m",
+     "price": 9000
+    },
+    {
+     "key": "Fi 15 · 5m",
+     "label": "Fi 15",
+     "size": "5m",
+     "price": 800
+    },
+    {
+     "key": "Fi 15 · 10m",
+     "label": "Fi 15",
+     "size": "10m",
+     "price": 1600
+    },
+    {
+     "key": "Fi 15 · 15m",
+     "label": "Fi 15",
+     "size": "15m",
+     "price": 2400
+    },
+    {
+     "key": "Fi 15 · 20m",
+     "label": "Fi 15",
+     "size": "20m",
+     "price": 3200
+    },
+    {
+     "key": "Fi 15 · 25m",
+     "label": "Fi 15",
+     "size": "25m",
+     "price": 4000
+    },
+    {
+     "key": "Fi 15 · 30m",
+     "label": "Fi 15",
+     "size": "30m",
+     "price": 4800
+    },
+    {
+     "key": "Fi 15 · 35m",
+     "label": "Fi 15",
+     "size": "35m",
+     "price": 5600
+    },
+    {
+     "key": "Fi 15 · 40m",
+     "label": "Fi 15",
+     "size": "40m",
+     "price": 6400
+    },
+    {
+     "key": "Fi 15 · 45m",
+     "label": "Fi 15",
+     "size": "45m",
+     "price": 7200
+    },
+    {
+     "key": "Fi 15 · 50m",
+     "label": "Fi 15",
+     "size": "50m",
+     "price": 8000
+    },
+    {
+     "key": "Fi 15 · 60m",
+     "label": "Fi 15",
+     "size": "60m",
+     "price": 9600
+    },
+    {
+     "key": "Fi 15 · 80m",
+     "label": "Fi 15",
+     "size": "80m",
+     "price": 12800
+    },
+    {
+     "key": "Fi 15 · 100m",
+     "label": "Fi 15",
+     "size": "100m",
+     "price": 16000
+    },
+    {
+     "key": "Fi 20 · 5m",
+     "label": "Fi 20",
+     "size": "5m",
+     "price": 1500
+    },
+    {
+     "key": "Fi 20 · 10m",
+     "label": "Fi 20",
+     "size": "10m",
+     "price": 3000
+    },
+    {
+     "key": "Fi 20 · 15m",
+     "label": "Fi 20",
+     "size": "15m",
+     "price": 4500
+    },
+    {
+     "key": "Fi 20 · 20m",
+     "label": "Fi 20",
+     "size": "20m",
+     "price": 6000
+    },
+    {
+     "key": "Fi 20 · 25m",
+     "label": "Fi 20",
+     "size": "25m",
+     "price": 7500
+    },
+    {
+     "key": "Fi 20 · 30m",
+     "label": "Fi 20",
+     "size": "30m",
+     "price": 9000
+    },
+    {
+     "key": "Fi 20 · 35m",
+     "label": "Fi 20",
+     "size": "35m",
+     "price": 10500
+    },
+    {
+     "key": "Fi 20 · 40m",
+     "label": "Fi 20",
+     "size": "40m",
+     "price": 12000
+    },
+    {
+     "key": "Fi 20 · 45m",
+     "label": "Fi 20",
+     "size": "45m",
+     "price": 13500
+    },
+    {
+     "key": "Fi 20 · 50m",
+     "label": "Fi 20",
+     "size": "50m",
+     "price": 15000
+    },
+    {
+     "key": "Fi 20 · 60m",
+     "label": "Fi 20",
+     "size": "60m",
+     "price": 18000
+    },
+    {
+     "key": "Fi 20 · 80m",
+     "label": "Fi 20",
+     "size": "80m",
+     "price": 24000
+    },
+    {
+     "key": "Fi 20 · 100m",
+     "label": "Fi 20",
+     "size": "100m",
+     "price": 30000
+    },
+    {
+     "key": "Fi 30 · 5m",
+     "label": "Fi 30",
+     "size": "5m",
+     "price": 2750
+    },
+    {
+     "key": "Fi 30 · 10m",
+     "label": "Fi 30",
+     "size": "10m",
+     "price": 5500
+    },
+    {
+     "key": "Fi 30 · 15m",
+     "label": "Fi 30",
+     "size": "15m",
+     "price": 8250
+    },
+    {
+     "key": "Fi 30 · 20m",
+     "label": "Fi 30",
+     "size": "20m",
+     "price": 11000
+    },
+    {
+     "key": "Fi 30 · 25m",
+     "label": "Fi 30",
+     "size": "25m",
+     "price": 13750
+    },
+    {
+     "key": "Fi 30 · 30m",
+     "label": "Fi 30",
+     "size": "30m",
+     "price": 16500
+    },
+    {
+     "key": "Fi 30 · 35m",
+     "label": "Fi 30",
+     "size": "35m",
+     "price": 19250
+    },
+    {
+     "key": "Fi 30 · 40m",
+     "label": "Fi 30",
+     "size": "40m",
+     "price": 22000
+    },
+    {
+     "key": "Fi 30 · 45m",
+     "label": "Fi 30",
+     "size": "45m",
+     "price": 24750
+    },
+    {
+     "key": "Fi 30 · 50m",
+     "label": "Fi 30",
+     "size": "50m",
+     "price": 27500
+    },
+    {
+     "key": "Fi 30 · 60m",
+     "label": "Fi 30",
+     "size": "60m",
+     "price": 33000
+    },
+    {
+     "key": "Fi 30 · 80m",
+     "label": "Fi 30",
+     "size": "80m",
+     "price": 44000
+    },
+    {
+     "key": "Fi 30 · 100m",
+     "label": "Fi 30",
+     "size": "100m",
+     "price": 55000
+    },
+    {
+     "key": "Fi 40 · 5m",
+     "label": "Fi 40",
+     "size": "5m",
+     "price": 4250
+    },
+    {
+     "key": "Fi 40 · 10m",
+     "label": "Fi 40",
+     "size": "10m",
+     "price": 8500
+    },
+    {
+     "key": "Fi 40 · 15m",
+     "label": "Fi 40",
+     "size": "15m",
+     "price": 12750
+    },
+    {
+     "key": "Fi 40 · 20m",
+     "label": "Fi 40",
+     "size": "20m",
+     "price": 17000
+    },
+    {
+     "key": "Fi 40 · 25m",
+     "label": "Fi 40",
+     "size": "25m",
+     "price": 21250
+    },
+    {
+     "key": "Fi 40 · 30m",
+     "label": "Fi 40",
+     "size": "30m",
+     "price": 25500
+    },
+    {
+     "key": "Fi 40 · 35m",
+     "label": "Fi 40",
+     "size": "35m",
+     "price": 29750
+    },
+    {
+     "key": "Fi 40 · 40m",
+     "label": "Fi 40",
+     "size": "40m",
+     "price": 34000
+    },
+    {
+     "key": "Fi 40 · 45m",
+     "label": "Fi 40",
+     "size": "45m",
+     "price": 38250
+    },
+    {
+     "key": "Fi 40 · 50m",
+     "label": "Fi 40",
+     "size": "50m",
+     "price": 42500
+    },
+    {
+     "key": "Fi 40 · 60m",
+     "label": "Fi 40",
+     "size": "60m",
+     "price": 51000
+    },
+    {
+     "key": "Fi 40 · 80m",
+     "label": "Fi 40",
+     "size": "80m",
+     "price": 68000
+    },
+    {
+     "key": "Fi 40 · 100m",
+     "label": "Fi 40",
+     "size": "100m",
+     "price": 85000
+    }
+   ],
+   "image": "images/products/sinteticka-juta/1.webp"
+  },
+  {
+   "slug": "jutani-kanap-u-boji",
+   "name": "Jutani kanap u boji",
+   "category": "kanap-i-tkanina",
+   "price": 150,
+   "colors": [
+    {
+     "key": "4mm · 5m",
+     "label": "4mm",
+     "size": "5m",
+     "price": 150
+    },
+    {
+     "key": "4mm · 10m",
+     "label": "4mm",
+     "size": "10m",
+     "price": 300
+    },
+    {
+     "key": "4mm · 15m",
+     "label": "4mm",
+     "size": "15m",
+     "price": 450
+    },
+    {
+     "key": "4mm · 20m",
+     "label": "4mm",
+     "size": "20m",
+     "price": 600
+    },
+    {
+     "key": "4mm · 25m",
+     "label": "4mm",
+     "size": "25m",
+     "price": 750
+    },
+    {
+     "key": "4mm · 30m",
+     "label": "4mm",
+     "size": "30m",
+     "price": 900
+    },
+    {
+     "key": "4mm · 35m",
+     "label": "4mm",
+     "size": "35m",
+     "price": 1050
+    },
+    {
+     "key": "4mm · 40m",
+     "label": "4mm",
+     "size": "40m",
+     "price": 1200
+    },
+    {
+     "key": "4mm · 45m",
+     "label": "4mm",
+     "size": "45m",
+     "price": 1350
+    },
+    {
+     "key": "4mm · 50m",
+     "label": "4mm",
+     "size": "50m",
+     "price": 1500
+    },
+    {
+     "key": "4mm · 60m",
+     "label": "4mm",
+     "size": "60m",
+     "price": 1800
+    },
+    {
+     "key": "4mm · 80m",
+     "label": "4mm",
+     "size": "80m",
+     "price": 2400
+    },
+    {
+     "key": "4mm · 100m",
+     "label": "4mm",
+     "size": "100m",
+     "price": 3000
+    },
+    {
+     "key": "6mm · 5m",
+     "label": "6mm",
+     "size": "5m",
+     "price": 200
+    },
+    {
+     "key": "6mm · 10m",
+     "label": "6mm",
+     "size": "10m",
+     "price": 400
+    },
+    {
+     "key": "6mm · 15m",
+     "label": "6mm",
+     "size": "15m",
+     "price": 600
+    },
+    {
+     "key": "6mm · 20m",
+     "label": "6mm",
+     "size": "20m",
+     "price": 800
+    },
+    {
+     "key": "6mm · 25m",
+     "label": "6mm",
+     "size": "25m",
+     "price": 1000
+    },
+    {
+     "key": "6mm · 30m",
+     "label": "6mm",
+     "size": "30m",
+     "price": 1200
+    },
+    {
+     "key": "6mm · 35m",
+     "label": "6mm",
+     "size": "35m",
+     "price": 1400
+    },
+    {
+     "key": "6mm · 40m",
+     "label": "6mm",
+     "size": "40m",
+     "price": 1600
+    },
+    {
+     "key": "6mm · 45m",
+     "label": "6mm",
+     "size": "45m",
+     "price": 1800
+    },
+    {
+     "key": "6mm · 50m",
+     "label": "6mm",
+     "size": "50m",
+     "price": 2000
+    },
+    {
+     "key": "6mm · 60m",
+     "label": "6mm",
+     "size": "60m",
+     "price": 2400
+    },
+    {
+     "key": "6mm · 80m",
+     "label": "6mm",
+     "size": "80m",
+     "price": 3200
+    },
+    {
+     "key": "6mm · 100m",
+     "label": "6mm",
+     "size": "100m",
+     "price": 4000
+    },
+    {
+     "key": "8mm · 5m",
+     "label": "8mm",
+     "size": "5m",
+     "price": 300
+    },
+    {
+     "key": "8mm · 10m",
+     "label": "8mm",
+     "size": "10m",
+     "price": 600
+    },
+    {
+     "key": "8mm · 15m",
+     "label": "8mm",
+     "size": "15m",
+     "price": 900
+    },
+    {
+     "key": "8mm · 20m",
+     "label": "8mm",
+     "size": "20m",
+     "price": 1200
+    },
+    {
+     "key": "8mm · 25m",
+     "label": "8mm",
+     "size": "25m",
+     "price": 1500
+    },
+    {
+     "key": "8mm · 30m",
+     "label": "8mm",
+     "size": "30m",
+     "price": 1800
+    },
+    {
+     "key": "8mm · 35m",
+     "label": "8mm",
+     "size": "35m",
+     "price": 2100
+    },
+    {
+     "key": "8mm · 40m",
+     "label": "8mm",
+     "size": "40m",
+     "price": 2400
+    },
+    {
+     "key": "8mm · 45m",
+     "label": "8mm",
+     "size": "45m",
+     "price": 2700
+    },
+    {
+     "key": "8mm · 50m",
+     "label": "8mm",
+     "size": "50m",
+     "price": 3000
+    },
+    {
+     "key": "8mm · 60m",
+     "label": "8mm",
+     "size": "60m",
+     "price": 3600
+    },
+    {
+     "key": "8mm · 80m",
+     "label": "8mm",
+     "size": "80m",
+     "price": 4800
+    },
+    {
+     "key": "8mm · 100m",
+     "label": "8mm",
+     "size": "100m",
+     "price": 6000
+    },
+    {
+     "key": "10mm · 5m",
+     "label": "10mm",
+     "size": "5m",
+     "price": 400
+    },
+    {
+     "key": "10mm · 10m",
+     "label": "10mm",
+     "size": "10m",
+     "price": 800
+    },
+    {
+     "key": "10mm · 15m",
+     "label": "10mm",
+     "size": "15m",
+     "price": 1200
+    },
+    {
+     "key": "10mm · 20m",
+     "label": "10mm",
+     "size": "20m",
+     "price": 1600
+    },
+    {
+     "key": "10mm · 25m",
+     "label": "10mm",
+     "size": "25m",
+     "price": 2000
+    },
+    {
+     "key": "10mm · 30m",
+     "label": "10mm",
+     "size": "30m",
+     "price": 2400
+    },
+    {
+     "key": "10mm · 35m",
+     "label": "10mm",
+     "size": "35m",
+     "price": 2800
+    },
+    {
+     "key": "10mm · 40m",
+     "label": "10mm",
+     "size": "40m",
+     "price": 3200
+    },
+    {
+     "key": "10mm · 45m",
+     "label": "10mm",
+     "size": "45m",
+     "price": 3600
+    },
+    {
+     "key": "10mm · 50m",
+     "label": "10mm",
+     "size": "50m",
+     "price": 4000
+    },
+    {
+     "key": "10mm · 60m",
+     "label": "10mm",
+     "size": "60m",
+     "price": 4800
+    },
+    {
+     "key": "10mm · 80m",
+     "label": "10mm",
+     "size": "80m",
+     "price": 6400
+    },
+    {
+     "key": "10mm · 100m",
+     "label": "10mm",
+     "size": "100m",
+     "price": 8000
+    },
+    {
+     "key": "12mm · 5m",
+     "label": "12mm",
+     "size": "5m",
+     "price": 500
+    },
+    {
+     "key": "12mm · 10m",
+     "label": "12mm",
+     "size": "10m",
+     "price": 1000
+    },
+    {
+     "key": "12mm · 15m",
+     "label": "12mm",
+     "size": "15m",
+     "price": 1500
+    },
+    {
+     "key": "12mm · 20m",
+     "label": "12mm",
+     "size": "20m",
+     "price": 2000
+    },
+    {
+     "key": "12mm · 25m",
+     "label": "12mm",
+     "size": "25m",
+     "price": 2500
+    },
+    {
+     "key": "12mm · 30m",
+     "label": "12mm",
+     "size": "30m",
+     "price": 3000
+    },
+    {
+     "key": "12mm · 35m",
+     "label": "12mm",
+     "size": "35m",
+     "price": 3500
+    },
+    {
+     "key": "12mm · 40m",
+     "label": "12mm",
+     "size": "40m",
+     "price": 4000
+    },
+    {
+     "key": "12mm · 45m",
+     "label": "12mm",
+     "size": "45m",
+     "price": 4500
+    },
+    {
+     "key": "12mm · 50m",
+     "label": "12mm",
+     "size": "50m",
+     "price": 5000
+    },
+    {
+     "key": "12mm · 60m",
+     "label": "12mm",
+     "size": "60m",
+     "price": 6000
+    },
+    {
+     "key": "12mm · 80m",
+     "label": "12mm",
+     "size": "80m",
+     "price": 8000
+    },
+    {
+     "key": "12mm · 100m",
+     "label": "12mm",
+     "size": "100m",
+     "price": 10000
+    },
+    {
+     "key": "14mm · 5m",
+     "label": "14mm",
+     "size": "5m",
+     "price": 700
+    },
+    {
+     "key": "14mm · 10m",
+     "label": "14mm",
+     "size": "10m",
+     "price": 1400
+    },
+    {
+     "key": "14mm · 15m",
+     "label": "14mm",
+     "size": "15m",
+     "price": 2100
+    },
+    {
+     "key": "14mm · 20m",
+     "label": "14mm",
+     "size": "20m",
+     "price": 2800
+    },
+    {
+     "key": "14mm · 25m",
+     "label": "14mm",
+     "size": "25m",
+     "price": 3500
+    },
+    {
+     "key": "14mm · 30m",
+     "label": "14mm",
+     "size": "30m",
+     "price": 4200
+    },
+    {
+     "key": "14mm · 35m",
+     "label": "14mm",
+     "size": "35m",
+     "price": 4900
+    },
+    {
+     "key": "14mm · 40m",
+     "label": "14mm",
+     "size": "40m",
+     "price": 5600
+    },
+    {
+     "key": "14mm · 45m",
+     "label": "14mm",
+     "size": "45m",
+     "price": 6300
+    },
+    {
+     "key": "14mm · 50m",
+     "label": "14mm",
+     "size": "50m",
+     "price": 7000
+    },
+    {
+     "key": "14mm · 60m",
+     "label": "14mm",
+     "size": "60m",
+     "price": 8400
+    },
+    {
+     "key": "14mm · 80m",
+     "label": "14mm",
+     "size": "80m",
+     "price": 11200
+    },
+    {
+     "key": "14mm · 100m",
+     "label": "14mm",
+     "size": "100m",
+     "price": 14000
+    },
+    {
+     "key": "16mm · 5m",
+     "label": "16mm",
+     "size": "5m",
+     "price": 900
+    },
+    {
+     "key": "16mm · 10m",
+     "label": "16mm",
+     "size": "10m",
+     "price": 1800
+    },
+    {
+     "key": "16mm · 15m",
+     "label": "16mm",
+     "size": "15m",
+     "price": 2700
+    },
+    {
+     "key": "16mm · 20m",
+     "label": "16mm",
+     "size": "20m",
+     "price": 3600
+    },
+    {
+     "key": "16mm · 25m",
+     "label": "16mm",
+     "size": "25m",
+     "price": 4500
+    },
+    {
+     "key": "16mm · 30m",
+     "label": "16mm",
+     "size": "30m",
+     "price": 5400
+    },
+    {
+     "key": "16mm · 35m",
+     "label": "16mm",
+     "size": "35m",
+     "price": 6300
+    },
+    {
+     "key": "16mm · 40m",
+     "label": "16mm",
+     "size": "40m",
+     "price": 7200
+    },
+    {
+     "key": "16mm · 45m",
+     "label": "16mm",
+     "size": "45m",
+     "price": 8100
+    },
+    {
+     "key": "16mm · 50m",
+     "label": "16mm",
+     "size": "50m",
+     "price": 9000
+    },
+    {
+     "key": "16mm · 60m",
+     "label": "16mm",
+     "size": "60m",
+     "price": 10800
+    },
+    {
+     "key": "16mm · 80m",
+     "label": "16mm",
+     "size": "80m",
+     "price": 14400
+    },
+    {
+     "key": "16mm · 100m",
+     "label": "16mm",
+     "size": "100m",
+     "price": 18000
+    },
+    {
+     "key": "20mm · 5m",
+     "label": "20mm",
+     "size": "5m",
+     "price": 1400
+    },
+    {
+     "key": "20mm · 10m",
+     "label": "20mm",
+     "size": "10m",
+     "price": 2800
+    },
+    {
+     "key": "20mm · 15m",
+     "label": "20mm",
+     "size": "15m",
+     "price": 4200
+    },
+    {
+     "key": "20mm · 20m",
+     "label": "20mm",
+     "size": "20m",
+     "price": 5600
+    },
+    {
+     "key": "20mm · 25m",
+     "label": "20mm",
+     "size": "25m",
+     "price": 7000
+    },
+    {
+     "key": "20mm · 30m",
+     "label": "20mm",
+     "size": "30m",
+     "price": 8400
+    },
+    {
+     "key": "20mm · 35m",
+     "label": "20mm",
+     "size": "35m",
+     "price": 9800
+    },
+    {
+     "key": "20mm · 40m",
+     "label": "20mm",
+     "size": "40m",
+     "price": 11200
+    },
+    {
+     "key": "20mm · 45m",
+     "label": "20mm",
+     "size": "45m",
+     "price": 12600
+    },
+    {
+     "key": "20mm · 50m",
+     "label": "20mm",
+     "size": "50m",
+     "price": 14000
+    },
+    {
+     "key": "20mm · 60m",
+     "label": "20mm",
+     "size": "60m",
+     "price": 16800
+    },
+    {
+     "key": "20mm · 80m",
+     "label": "20mm",
+     "size": "80m",
+     "price": 22400
+    },
+    {
+     "key": "20mm · 100m",
+     "label": "20mm",
+     "size": "100m",
+     "price": 28000
+    },
+    {
+     "key": "25mm · 5m",
+     "label": "25mm",
+     "size": "5m",
+     "price": 1700
+    },
+    {
+     "key": "25mm · 10m",
+     "label": "25mm",
+     "size": "10m",
+     "price": 3400
+    },
+    {
+     "key": "25mm · 15m",
+     "label": "25mm",
+     "size": "15m",
+     "price": 5100
+    },
+    {
+     "key": "25mm · 20m",
+     "label": "25mm",
+     "size": "20m",
+     "price": 6800
+    },
+    {
+     "key": "25mm · 25m",
+     "label": "25mm",
+     "size": "25m",
+     "price": 8500
+    },
+    {
+     "key": "25mm · 30m",
+     "label": "25mm",
+     "size": "30m",
+     "price": 10200
+    },
+    {
+     "key": "25mm · 35m",
+     "label": "25mm",
+     "size": "35m",
+     "price": 11900
+    },
+    {
+     "key": "25mm · 40m",
+     "label": "25mm",
+     "size": "40m",
+     "price": 13600
+    },
+    {
+     "key": "25mm · 45m",
+     "label": "25mm",
+     "size": "45m",
+     "price": 15300
+    },
+    {
+     "key": "25mm · 50m",
+     "label": "25mm",
+     "size": "50m",
+     "price": 17000
+    },
+    {
+     "key": "25mm · 60m",
+     "label": "25mm",
+     "size": "60m",
+     "price": 20400
+    },
+    {
+     "key": "25mm · 80m",
+     "label": "25mm",
+     "size": "80m",
+     "price": 27200
+    },
+    {
+     "key": "25mm · 100m",
+     "label": "25mm",
+     "size": "100m",
+     "price": 34000
+    },
+    {
+     "key": "30mm · 5m",
+     "label": "30mm",
+     "size": "5m",
+     "price": 2800
+    },
+    {
+     "key": "30mm · 10m",
+     "label": "30mm",
+     "size": "10m",
+     "price": 5600
+    },
+    {
+     "key": "30mm · 15m",
+     "label": "30mm",
+     "size": "15m",
+     "price": 8400
+    },
+    {
+     "key": "30mm · 20m",
+     "label": "30mm",
+     "size": "20m",
+     "price": 11200
+    },
+    {
+     "key": "30mm · 25m",
+     "label": "30mm",
+     "size": "25m",
+     "price": 14000
+    },
+    {
+     "key": "30mm · 30m",
+     "label": "30mm",
+     "size": "30m",
+     "price": 16800
+    },
+    {
+     "key": "30mm · 35m",
+     "label": "30mm",
+     "size": "35m",
+     "price": 19600
+    },
+    {
+     "key": "30mm · 40m",
+     "label": "30mm",
+     "size": "40m",
+     "price": 22400
+    },
+    {
+     "key": "30mm · 45m",
+     "label": "30mm",
+     "size": "45m",
+     "price": 25200
+    },
+    {
+     "key": "30mm · 50m",
+     "label": "30mm",
+     "size": "50m",
+     "price": 28000
+    },
+    {
+     "key": "30mm · 60m",
+     "label": "30mm",
+     "size": "60m",
+     "price": 33600
+    },
+    {
+     "key": "30mm · 80m",
+     "label": "30mm",
+     "size": "80m",
+     "price": 44800
+    },
+    {
+     "key": "30mm · 100m",
+     "label": "30mm",
+     "size": "100m",
+     "price": 56000
+    }
+   ],
+   "image": "images/products/jutani-kanap-u-boji/1.webp"
+  },
+  {
+   "slug": "juta-klube-2-5mm",
+   "name": "Juta klupče 2,5 mm",
+   "category": "kanap-i-tkanina",
+   "price": 200,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 200
+    }
+   ],
+   "image": "images/products/juta-klube-2-5mm/1.webp"
+  },
+  {
+   "slug": "juta-klube-1mm",
+   "name": "Juta klupče 1 mm",
+   "category": "kanap-i-tkanina",
+   "price": 150,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 150
+    }
+   ],
+   "image": "images/products/juta-klube-1mm/1.webp"
+  },
+  {
+   "slug": "juta-3-snopa",
+   "name": "Juta 3 snopa",
+   "category": "kanap-i-tkanina",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/juta-3-snopa/1.webp"
+  },
+  {
+   "slug": "juta-4-snopa",
+   "name": "Juta 4 snopa",
+   "category": "kanap-i-tkanina",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/juta-4-snopa/1.webp"
+  },
+  {
+   "slug": "jutano-platno",
+   "name": "Jutano platno",
+   "category": "kanap-i-tkanina",
+   "price": 400,
+   "colors": [
+    {
+     "key": "1 m²",
+     "label": "1 m²",
+     "size": "",
+     "price": 400
+    },
+    {
+     "key": "2 m²",
+     "label": "2 m²",
+     "size": "",
+     "price": 800
+    },
+    {
+     "key": "3 m²",
+     "label": "3 m²",
+     "size": "",
+     "price": 1200
+    },
+    {
+     "key": "4 m²",
+     "label": "4 m²",
+     "size": "",
+     "price": 1600
+    },
+    {
+     "key": "5 m²",
+     "label": "5 m²",
+     "size": "",
+     "price": 2000
+    },
+    {
+     "key": "10 m²",
+     "label": "10 m²",
+     "size": "",
+     "price": 4000
+    },
+    {
+     "key": "20 m²",
+     "label": "20 m²",
+     "size": "",
+     "price": 8000
+    },
+    {
+     "key": "30 m²",
+     "label": "30 m²",
+     "size": "",
+     "price": 12000
+    },
+    {
+     "key": "40 m²",
+     "label": "40 m²",
+     "size": "",
+     "price": 16000
+    },
+    {
+     "key": "50 m²",
+     "label": "50 m²",
+     "size": "",
+     "price": 20000
+    }
+   ],
+   "image": "images/products/jutano-platno/1.webp"
+  },
+  {
+   "slug": "juta-traka-u-boji",
+   "name": "Juta traka u boji",
+   "category": "kanap-i-tkanina",
+   "price": 100,
+   "colors": [
+    {
+     "key": "5cm · 2m",
+     "label": "5cm",
+     "size": "2m",
+     "price": 100
+    },
+    {
+     "key": "5cm · 4m",
+     "label": "5cm",
+     "size": "4m",
+     "price": 200
+    },
+    {
+     "key": "10cm · 2m",
+     "label": "10cm",
+     "size": "2m",
+     "price": 160
+    },
+    {
+     "key": "10cm · 4m",
+     "label": "10cm",
+     "size": "4m",
+     "price": 320
+    },
+    {
+     "key": "15cm · 2m",
+     "label": "15cm",
+     "size": "2m",
+     "price": 240
+    },
+    {
+     "key": "15cm · 4m",
+     "label": "15cm",
+     "size": "4m",
+     "price": 480
+    },
+    {
+     "key": "20cm · 2m",
+     "label": "20cm",
+     "size": "2m",
+     "price": 300
+    },
+    {
+     "key": "20cm · 4m",
+     "label": "20cm",
+     "size": "4m",
+     "price": 600
+    }
+   ],
+   "image": "images/products/juta-traka-u-boji/1.webp"
+  },
+  {
+   "slug": "bokobrani-rusticni",
+   "name": "Bokobrani rustični",
+   "category": "kanap-i-tkanina",
+   "price": 5000,
+   "colors": [
+    {
+     "key": "Mobilni (viseći)",
+     "label": "Mobilni (viseći)",
+     "size": "",
+     "price": 5000
+    },
+    {
+     "key": "Fiksni, 1 m dužine",
+     "label": "Fiksni, 1 m dužine",
+     "size": "",
+     "price": 5000
+    },
+    {
+     "key": "Fiksni, 2 m dužine",
+     "label": "Fiksni, 2 m dužine",
+     "size": "",
+     "price": 15000
+    }
+   ],
+   "image": "images/products/bokobrani-rusticni/1.webp"
+  },
+  {
+   "slug": "kanap-za-penjanje-fi40",
+   "name": "Kanap za penjanje fi40 — sa čeličnom alkom",
+   "category": "sport-i-penjanje",
+   "price": 2500,
+   "colors": [
+    {
+     "key": "2m",
+     "label": "2m",
+     "size": "",
+     "price": 2500
+    },
+    {
+     "key": "3m",
+     "label": "3m",
+     "size": "",
+     "price": 3000
+    },
+    {
+     "key": "4m",
+     "label": "4m",
+     "size": "",
+     "price": 3500
+    },
+    {
+     "key": "5m",
+     "label": "5m",
+     "size": "",
+     "price": 4000
+    },
+    {
+     "key": "6m",
+     "label": "6m",
+     "size": "",
+     "price": 4500
+    },
+    {
+     "key": "7m",
+     "label": "7m",
+     "size": "",
+     "price": 5000
+    },
+    {
+     "key": "8m",
+     "label": "8m",
+     "size": "",
+     "price": 5500
+    },
+    {
+     "key": "9m",
+     "label": "9m",
+     "size": "",
+     "price": 6000
+    },
+    {
+     "key": "10m",
+     "label": "10m",
+     "size": "",
+     "price": 6500
+    }
+   ],
+   "image": "images/products/kanap-za-penjanje-fi40/1.webp"
+  },
+  {
+   "slug": "junior-kanap-za-penjanje-fi30",
+   "name": "Junior kanap za penjanje fi30 — bez čvorova",
+   "category": "sport-i-penjanje",
+   "price": 1500,
+   "colors": [
+    {
+     "key": "2m",
+     "label": "2m",
+     "size": "",
+     "price": 1500
+    },
+    {
+     "key": "3m",
+     "label": "3m",
+     "size": "",
+     "price": 1800
+    },
+    {
+     "key": "4m",
+     "label": "4m",
+     "size": "",
+     "price": 2100
+    },
+    {
+     "key": "5m",
+     "label": "5m",
+     "size": "",
+     "price": 2400
+    },
+    {
+     "key": "6m",
+     "label": "6m",
+     "size": "",
+     "price": 2700
+    },
+    {
+     "key": "7m",
+     "label": "7m",
+     "size": "",
+     "price": 3000
+    },
+    {
+     "key": "8m",
+     "label": "8m",
+     "size": "",
+     "price": 3300
+    },
+    {
+     "key": "9m",
+     "label": "9m",
+     "size": "",
+     "price": 3600
+    },
+    {
+     "key": "10m",
+     "label": "10m",
+     "size": "",
+     "price": 3900
+    }
+   ],
+   "image": "images/products/junior-kanap-za-penjanje-fi30/1.webp"
+  },
+  {
+   "slug": "mreza-za-penjanje-zastitna-mreza",
+   "name": "Mreža za penjanje i zaštitna mreža",
+   "category": "sport-i-penjanje",
+   "price": 5000,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 5000
+    }
+   ],
+   "image": "images/products/mreza-za-penjanje-zastitna-mreza/1.webp"
+  },
+  {
+   "slug": "brodske-merdevine",
+   "name": "Brodske merdevine",
+   "category": "sport-i-penjanje",
+   "price": 2500,
+   "colors": [
+    {
+     "key": "1m",
+     "label": "1m",
+     "size": "",
+     "price": 2500
+    },
+    {
+     "key": "2m",
+     "label": "2m",
+     "size": "",
+     "price": 4000
+    },
+    {
+     "key": "3m",
+     "label": "3m",
+     "size": "",
+     "price": 5500
+    },
+    {
+     "key": "4m",
+     "label": "4m",
+     "size": "",
+     "price": 7000
+    },
+    {
+     "key": "5m",
+     "label": "5m",
+     "size": "",
+     "price": 8500
+    },
+    {
+     "key": "6m",
+     "label": "6m",
+     "size": "",
+     "price": 10000
+    },
+    {
+     "key": "7m",
+     "label": "7m",
+     "size": "",
+     "price": 11500
+    },
+    {
+     "key": "8m",
+     "label": "8m",
+     "size": "",
+     "price": 13000
+    },
+    {
+     "key": "9m",
+     "label": "9m",
+     "size": "",
+     "price": 14500
+    },
+    {
+     "key": "10m",
+     "label": "10m",
+     "size": "",
+     "price": 16000
+    }
+   ],
+   "image": "images/products/brodske-merdevine/1.webp"
+  },
+  {
+   "slug": "monkey-bar-kanap",
+   "name": "Monkey bar kanap",
+   "category": "sport-i-penjanje",
+   "price": 1500,
+   "colors": [
+    {
+     "key": "Bez kugle na kraju",
+     "label": "Bez kugle na kraju",
+     "size": "",
+     "price": 1500
+    },
+    {
+     "key": "Sa kuglom na kraju",
+     "label": "Sa kuglom na kraju",
+     "size": "",
+     "price": 2000
+    }
+   ],
+   "image": "images/products/monkey-bar-kanap/1.webp"
+  },
+  {
+   "slug": "jutani-tabure",
+   "name": "Jutani tabure",
+   "category": "kuca-i-dekoracija",
+   "price": 9000,
+   "colors": [
+    {
+     "key": "M",
+     "label": "M",
+     "size": "",
+     "price": 9000
+    },
+    {
+     "key": "XL",
+     "label": "XL",
+     "size": "",
+     "price": 12000
+    }
+   ],
+   "image": "images/products/jutani-tabure/1.webp"
+  },
+  {
+   "slug": "pletena-stolica-drvo-i-juta",
+   "name": "Pletena stolica — drvo i juta",
+   "category": "kuca-i-dekoracija",
+   "price": 15000,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 15000
+    }
+   ],
+   "image": "images/products/pletena-stolica-drvo-i-juta/1.webp"
+  },
+  {
+   "slug": "klub-sto-juta",
+   "name": "Klub sto — juta",
+   "category": "kuca-i-dekoracija",
+   "price": 18000,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 18000
+    }
+   ],
+   "image": "images/products/klub-sto-juta/1.webp"
+  },
+  {
+   "slug": "ljuljaska-gospodar-prstenova",
+   "name": "Ljuljaška Gospodar prstenova",
+   "category": "kuca-i-dekoracija",
+   "price": 25000,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 25000
+    }
+   ],
+   "image": "images/products/ljuljaska-gospodar-prstenova/1.webp"
+  },
+  {
+   "slug": "ljuljaska-basic-drvo-i-juta",
+   "name": "Ljuljaška basic — drvo i juta",
+   "category": "kuca-i-dekoracija",
+   "price": 5000,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 5000
+    }
+   ],
+   "image": "images/products/ljuljaska-basic-drvo-i-juta/1.webp"
+  },
+  {
+   "slug": "jutana-visilica-sa-el-kablom",
+   "name": "Jutana visilica sa el. kablom",
+   "category": "kuca-i-dekoracija",
+   "price": 900,
+   "colors": [
+    {
+     "key": "Fi 25 · 1m",
+     "label": "Fi 25",
+     "size": "1m",
+     "price": 900
+    },
+    {
+     "key": "Fi 25 · 2m",
+     "label": "Fi 25",
+     "size": "2m",
+     "price": 1800
+    },
+    {
+     "key": "Fi 25 · 3m",
+     "label": "Fi 25",
+     "size": "3m",
+     "price": 2700
+    },
+    {
+     "key": "Fi 25 · 4m",
+     "label": "Fi 25",
+     "size": "4m",
+     "price": 3600
+    },
+    {
+     "key": "Fi 25 · 5m",
+     "label": "Fi 25",
+     "size": "5m",
+     "price": 4500
+    },
+    {
+     "key": "Fi 25 · 6m",
+     "label": "Fi 25",
+     "size": "6m",
+     "price": 5400
+    },
+    {
+     "key": "Fi 25 · 7m",
+     "label": "Fi 25",
+     "size": "7m",
+     "price": 6300
+    },
+    {
+     "key": "Fi 25 · 8m",
+     "label": "Fi 25",
+     "size": "8m",
+     "price": 7200
+    },
+    {
+     "key": "Fi 25 · 9m",
+     "label": "Fi 25",
+     "size": "9m",
+     "price": 8100
+    },
+    {
+     "key": "Fi 25 · 10m",
+     "label": "Fi 25",
+     "size": "10m",
+     "price": 9000
+    },
+    {
+     "key": "Fi 30 · 1m",
+     "label": "Fi 30",
+     "size": "1m",
+     "price": 1000
+    },
+    {
+     "key": "Fi 30 · 2m",
+     "label": "Fi 30",
+     "size": "2m",
+     "price": 2000
+    },
+    {
+     "key": "Fi 30 · 3m",
+     "label": "Fi 30",
+     "size": "3m",
+     "price": 3000
+    },
+    {
+     "key": "Fi 30 · 4m",
+     "label": "Fi 30",
+     "size": "4m",
+     "price": 4000
+    },
+    {
+     "key": "Fi 30 · 5m",
+     "label": "Fi 30",
+     "size": "5m",
+     "price": 5000
+    },
+    {
+     "key": "Fi 30 · 6m",
+     "label": "Fi 30",
+     "size": "6m",
+     "price": 6000
+    },
+    {
+     "key": "Fi 30 · 7m",
+     "label": "Fi 30",
+     "size": "7m",
+     "price": 7000
+    },
+    {
+     "key": "Fi 30 · 8m",
+     "label": "Fi 30",
+     "size": "8m",
+     "price": 8000
+    },
+    {
+     "key": "Fi 30 · 9m",
+     "label": "Fi 30",
+     "size": "9m",
+     "price": 9000
+    },
+    {
+     "key": "Fi 30 · 10m",
+     "label": "Fi 30",
+     "size": "10m",
+     "price": 10000
+    },
+    {
+     "key": "Fi 40 · 1m",
+     "label": "Fi 40",
+     "size": "1m",
+     "price": 1100
+    },
+    {
+     "key": "Fi 40 · 2m",
+     "label": "Fi 40",
+     "size": "2m",
+     "price": 2200
+    },
+    {
+     "key": "Fi 40 · 3m",
+     "label": "Fi 40",
+     "size": "3m",
+     "price": 3300
+    },
+    {
+     "key": "Fi 40 · 4m",
+     "label": "Fi 40",
+     "size": "4m",
+     "price": 4400
+    },
+    {
+     "key": "Fi 40 · 5m",
+     "label": "Fi 40",
+     "size": "5m",
+     "price": 5500
+    },
+    {
+     "key": "Fi 40 · 6m",
+     "label": "Fi 40",
+     "size": "6m",
+     "price": 6600
+    },
+    {
+     "key": "Fi 40 · 7m",
+     "label": "Fi 40",
+     "size": "7m",
+     "price": 7700
+    },
+    {
+     "key": "Fi 40 · 8m",
+     "label": "Fi 40",
+     "size": "8m",
+     "price": 8800
+    },
+    {
+     "key": "Fi 40 · 9m",
+     "label": "Fi 40",
+     "size": "9m",
+     "price": 9900
+    },
+    {
+     "key": "Fi 40 · 10m",
+     "label": "Fi 40",
+     "size": "10m",
+     "price": 11000
+    }
+   ],
+   "image": "images/products/jutana-visilica-sa-el-kablom/1.webp"
+  },
+  {
+   "slug": "jutana-visilica",
+   "name": "Jutana visilica",
+   "category": "kuca-i-dekoracija",
+   "price": 0,
+   "colors": [
+    {
+     "key": "x1 — jednostruka",
+     "label": "x1 — jednostruka",
+     "size": "",
+     "price": 0
+    },
+    {
+     "key": "x2 — dupla",
+     "label": "x2 — dupla",
+     "size": "",
+     "price": 0
+    },
+    {
+     "key": "x3 — trostruka",
+     "label": "x3 — trostruka",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/jutana-visilica/1.webp"
+  },
+  {
+   "slug": "jutani-luster",
+   "name": "Jutani luster",
+   "category": "kuca-i-dekoracija",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/jutani-luster/1.webp"
+  },
+  {
+   "slug": "zidni-panel-od-kanapa",
+   "name": "Zidni panel od pletenog kanapa",
+   "category": "kuca-i-dekoracija",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/zidni-panel-od-kanapa/1.webp"
+  },
+  {
+   "slug": "plafonska-dekoracija-od-kanapa",
+   "name": "Plafonska dekoracija od kanapa",
+   "category": "kuca-i-dekoracija",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/plafonska-dekoracija-od-kanapa/1.webp"
+  },
+  {
+   "slug": "jutani-podmetac",
+   "name": "Jutani podmetač",
+   "category": "kuca-i-dekoracija",
+   "price": 150,
+   "colors": [
+    {
+     "key": "Za čašu fi10",
+     "label": "Za čašu fi10",
+     "size": "",
+     "price": 150
+    },
+    {
+     "key": "Za tanjir fi30",
+     "label": "Za tanjir fi30",
+     "size": "",
+     "price": 750
+    },
+    {
+     "key": "Elipsa 30x50cm",
+     "label": "Elipsa 30x50cm",
+     "size": "",
+     "price": 900
+    }
+   ],
+   "image": "images/products/jutani-podmetac/1.webp"
+  },
+  {
+   "slug": "jutani-dzakcici-i-vrece",
+   "name": "Jutani džakčići i vreće",
+   "category": "kuca-i-dekoracija",
+   "price": 100,
+   "colors": [
+    {
+     "key": "10cm x 14cm",
+     "label": "10cm x 14cm",
+     "size": "",
+     "price": 100
+    },
+    {
+     "key": "14cm x 18cm",
+     "label": "14cm x 18cm",
+     "size": "",
+     "price": 130
+    },
+    {
+     "key": "18cm x 25cm",
+     "label": "18cm x 25cm",
+     "size": "",
+     "price": 160
+    },
+    {
+     "key": "25cm x 50cm",
+     "label": "25cm x 50cm",
+     "size": "",
+     "price": 210
+    },
+    {
+     "key": "50cm x 100cm",
+     "label": "50cm x 100cm",
+     "size": "",
+     "price": 320
+    }
+   ],
+   "image": "images/products/jutani-dzakcici-i-vrece/1.webp"
+  },
+  {
+   "slug": "silo-za-kanap",
+   "name": "Šilo za kanap",
+   "category": "propratni-materijal",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/silo-za-kanap/1.webp"
+  },
+  {
+   "slug": "metalna-suza-za-kanap",
+   "name": "Metalna suza za kanap",
+   "category": "propratni-materijal",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/metalna-suza-za-kanap/1.webp"
+  },
+  {
+   "slug": "metalna-alka-za-kanap",
+   "name": "Metalna alka za kanap",
+   "category": "propratni-materijal",
+   "price": 0,
+   "colors": [
+    {
+     "key": "standard",
+     "label": "",
+     "size": "",
+     "price": 0
+    }
+   ],
+   "image": "images/products/metalna-alka-za-kanap/1.webp"
+  }
+ ]
+}

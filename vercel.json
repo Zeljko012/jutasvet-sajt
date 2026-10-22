@@ -1,0 +1,442 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "redirects": [
+    {
+      "source": "/products/prirodna-juta-cena-po-metru",
+      "destination": "/proizvod/prirodna-juta",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/prirodna-juta-cena-po-metru",
+      "destination": "/proizvod/prirodna-juta",
+      "permanent": true
+    },
+    {
+      "source": "/products/sinteticka-juta-cena-po-metru",
+      "destination": "/proizvod/sinteticka-juta",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/sinteticka-juta-cena-po-metru",
+      "destination": "/proizvod/sinteticka-juta",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutani-kanap-u-boji-cena-po-metru",
+      "destination": "/proizvod/jutani-kanap-u-boji",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutani-kanap-u-boji-cena-po-metru",
+      "destination": "/proizvod/jutani-kanap-u-boji",
+      "permanent": true
+    },
+    {
+      "source": "/products/juta-klube-2-5mm",
+      "destination": "/proizvod/juta-klube-2-5mm",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/juta-klube-2-5mm",
+      "destination": "/proizvod/juta-klube-2-5mm",
+      "permanent": true
+    },
+    {
+      "source": "/products/juta-klube-1kg",
+      "destination": "/proizvod/juta-klube-1mm",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/juta-klube-1kg",
+      "destination": "/proizvod/juta-klube-1mm",
+      "permanent": true
+    },
+    {
+      "source": "/products/juta-3-snopa",
+      "destination": "/proizvod/juta-3-snopa",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/juta-3-snopa",
+      "destination": "/proizvod/juta-3-snopa",
+      "permanent": true
+    },
+    {
+      "source": "/products/juta-4-snopa",
+      "destination": "/proizvod/juta-4-snopa",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/juta-4-snopa",
+      "destination": "/proizvod/juta-4-snopa",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutano-platno-400-rsd-m",
+      "destination": "/proizvod/jutano-platno",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutano-platno-400-rsd-m",
+      "destination": "/proizvod/jutano-platno",
+      "permanent": true
+    },
+    {
+      "source": "/products/juta-traka-u-boji-cena-po-metru-1",
+      "destination": "/proizvod/juta-traka-u-boji",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/juta-traka-u-boji-cena-po-metru-1",
+      "destination": "/proizvod/juta-traka-u-boji",
+      "permanent": true
+    },
+    {
+      "source": "/products/bokobrani-rusticni",
+      "destination": "/proizvod/bokobrani-rusticni",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/bokobrani-rusticni",
+      "destination": "/proizvod/bokobrani-rusticni",
+      "permanent": true
+    },
+    {
+      "source": "/products/kanap-za-penjanje-fi40",
+      "destination": "/proizvod/kanap-za-penjanje-fi40",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/kanap-za-penjanje-fi40",
+      "destination": "/proizvod/kanap-za-penjanje-fi40",
+      "permanent": true
+    },
+    {
+      "source": "/products/junior-kanap-za-penjanje-fi30",
+      "destination": "/proizvod/junior-kanap-za-penjanje-fi30",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/junior-kanap-za-penjanje-fi30",
+      "destination": "/proizvod/junior-kanap-za-penjanje-fi30",
+      "permanent": true
+    },
+    {
+      "source": "/products/mreza-za-penjanje-zastitna-mreza",
+      "destination": "/proizvod/mreza-za-penjanje-zastitna-mreza",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/mreza-za-penjanje-zastitna-mreza",
+      "destination": "/proizvod/mreza-za-penjanje-zastitna-mreza",
+      "permanent": true
+    },
+    {
+      "source": "/products/merdevine-za-decu-brodske-merdevine",
+      "destination": "/proizvod/brodske-merdevine",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/merdevine-za-decu-brodske-merdevine",
+      "destination": "/proizvod/brodske-merdevine",
+      "permanent": true
+    },
+    {
+      "source": "/products/monkey-bar-rope",
+      "destination": "/proizvod/monkey-bar-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/monkey-bar-rope",
+      "destination": "/proizvod/monkey-bar-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutani-tabure",
+      "destination": "/proizvod/jutani-tabure",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutani-tabure",
+      "destination": "/proizvod/jutani-tabure",
+      "permanent": true
+    },
+    {
+      "source": "/products/stolica-pletena-drvo-i-juta",
+      "destination": "/proizvod/pletena-stolica-drvo-i-juta",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/stolica-pletena-drvo-i-juta",
+      "destination": "/proizvod/pletena-stolica-drvo-i-juta",
+      "permanent": true
+    },
+    {
+      "source": "/products/klub-sto-juta",
+      "destination": "/proizvod/klub-sto-juta",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/klub-sto-juta",
+      "destination": "/proizvod/klub-sto-juta",
+      "permanent": true
+    },
+    {
+      "source": "/products/ljuljaska-okrugla-drvo-i-juta",
+      "destination": "/proizvod/ljuljaska-gospodar-prstenova",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/ljuljaska-okrugla-drvo-i-juta",
+      "destination": "/proizvod/ljuljaska-gospodar-prstenova",
+      "permanent": true
+    },
+    {
+      "source": "/products/ljuljaska-basic-drvo-i-juta",
+      "destination": "/proizvod/ljuljaska-basic-drvo-i-juta",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/ljuljaska-basic-drvo-i-juta",
+      "destination": "/proizvod/ljuljaska-basic-drvo-i-juta",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutana-visilica-sa-el-kablom",
+      "destination": "/proizvod/jutana-visilica-sa-el-kablom",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutana-visilica-sa-el-kablom",
+      "destination": "/proizvod/jutana-visilica-sa-el-kablom",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutana-visilica",
+      "destination": "/proizvod/jutana-visilica",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutana-visilica",
+      "destination": "/proizvod/jutana-visilica",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutani-luster",
+      "destination": "/proizvod/jutani-luster",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutani-luster",
+      "destination": "/proizvod/jutani-luster",
+      "permanent": true
+    },
+    {
+      "source": "/products/zidna-dekoracija-pleteni-panel-od-kanapa",
+      "destination": "/proizvod/zidni-panel-od-kanapa",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/zidna-dekoracija-pleteni-panel-od-kanapa",
+      "destination": "/proizvod/zidni-panel-od-kanapa",
+      "permanent": true
+    },
+    {
+      "source": "/products/plafonska-dekoracija-od-kanapa-vertikalne-linije",
+      "destination": "/proizvod/plafonska-dekoracija-od-kanapa",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/plafonska-dekoracija-od-kanapa-vertikalne-linije",
+      "destination": "/proizvod/plafonska-dekoracija-od-kanapa",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutani-podmetac",
+      "destination": "/proizvod/jutani-podmetac",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutani-podmetac",
+      "destination": "/proizvod/jutani-podmetac",
+      "permanent": true
+    },
+    {
+      "source": "/products/jutani-dzakcici-i-vrece-prirodna-boja",
+      "destination": "/proizvod/jutani-dzakcici-i-vrece",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/jutani-dzakcici-i-vrece-prirodna-boja",
+      "destination": "/proizvod/jutani-dzakcici-i-vrece",
+      "permanent": true
+    },
+    {
+      "source": "/products/silo-za-kanap",
+      "destination": "/proizvod/silo-za-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/silo-za-kanap",
+      "destination": "/proizvod/silo-za-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/products/metalna-suza-za-kanap",
+      "destination": "/proizvod/metalna-suza-za-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/metalna-suza-za-kanap",
+      "destination": "/proizvod/metalna-suza-za-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/products/metalna-alka-za-kanap",
+      "destination": "/proizvod/metalna-alka-za-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:c/products/metalna-alka-za-kanap",
+      "destination": "/proizvod/metalna-alka-za-kanap",
+      "permanent": true
+    },
+    {
+      "source": "/collections/juta-na-metar-1",
+      "destination": "/kategorija/kanap-i-tkanina",
+      "permanent": true
+    },
+    {
+      "source": "/collections/juta-na-metar",
+      "destination": "/kategorija/kanap-i-tkanina",
+      "permanent": true
+    },
+    {
+      "source": "/collections/specijalni-kanapi",
+      "destination": "/kategorija/kanap-i-tkanina",
+      "permanent": true
+    },
+    {
+      "source": "/collections/kanapi-za-penjanje",
+      "destination": "/kategorija/sport-i-penjanje",
+      "permanent": true
+    },
+    {
+      "source": "/collections/mreze-i-penjanje",
+      "destination": "/kategorija/sport-i-penjanje",
+      "permanent": true
+    },
+    {
+      "source": "/collections/fitnes",
+      "destination": "/kategorija/sport-i-penjanje",
+      "permanent": true
+    },
+    {
+      "source": "/collections/namestaj",
+      "destination": "/kategorija/kuca-i-dekoracija",
+      "permanent": true
+    },
+    {
+      "source": "/collections/za-trpezu",
+      "destination": "/kategorija/kuca-i-dekoracija",
+      "permanent": true
+    },
+    {
+      "source": "/collections/rasveta",
+      "destination": "/kategorija/kuca-i-dekoracija",
+      "permanent": true
+    },
+    {
+      "source": "/collections/aksesoari",
+      "destination": "/kategorija/kuca-i-dekoracija",
+      "permanent": true
+    },
+    {
+      "source": "/collections/plafon-i-instalacije",
+      "destination": "/reference",
+      "permanent": true
+    },
+    {
+      "source": "/collections/pregrade-i-zidovi",
+      "destination": "/reference",
+      "permanent": true
+    },
+    {
+      "source": "/collections/radovi-po-meri",
+      "destination": "/reference",
+      "permanent": true
+    },
+    {
+      "source": "/collections/propratni-materijal",
+      "destination": "/kategorija/propratni-materijal",
+      "permanent": true
+    },
+    {
+      "source": "/collections/pribor",
+      "destination": "/kategorija/propratni-materijal",
+      "permanent": true
+    },
+    {
+      "source": "/collections/all",
+      "destination": "/prodavnica",
+      "permanent": true
+    },
+    {
+      "source": "/collections/:slug*",
+      "destination": "/prodavnica",
+      "permanent": true
+    },
+    {
+      "source": "/products/:slug*",
+      "destination": "/prodavnica",
+      "permanent": true
+    },
+    {
+      "source": "/cart",
+      "destination": "/korpa",
+      "permanent": true
+    },
+    {
+      "source": "/pages/contact",
+      "destination": "/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/pages/kontakt",
+      "destination": "/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/pages/o-nama",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/o-nama",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/:slug*",
+      "destination": "/vodic",
+      "permanent": true
+    },
+    {
+      "source": "/account/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/account",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE } from "../data/site";
+import { money } from "../lib/format";
+const updated = "2026";
+---
+
+<Base
+  title="Uslovi korišćenja"
+  description="Uslovi korišćenja i kupovine na sajtu Juta Svet."
+  noindex
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: "Uslovi korišćenja" }]} />
+    <article class="prose">
+      <h1>Uslovi korišćenja</h1>
+      <p><em>Poslednje ažuriranje: {updated}.</em></p>
+
+      <h2>1. Opšte</h2>
+      <p>
+        Sajt {SITE.url.replace("https://", "")} i prodavnicu vodi {SITE.legalName}
+        („Prodavac”). Poručivanjem proizvoda potvrđujete da ste saglasni sa ovim
+        uslovima.
+      </p>
+
+      <h2>2. Proizvodi i cene</h2>
+      <p>
+        Proizvodi su kanapi, tkanine i predmeti od jute; deo ponude se seče ili izrađuje po
+        porudžbini. Cene su izražene u
+        dinarima ({SITE.currency}) i uključuju PDV ako je Prodavac u sistemu PDV-a.
+        Zadržavamo pravo izmene cena; za već potvrđene porudžbine važi cena u trenutku
+        poručivanja.
+      </p>
+
+      <h2>3. Porudžbina i plaćanje</h2>
+      <p>
+        Porudžbina se šalje putem forme na sajtu. Plaćanje je pouzećem, gotovinom
+        kuriru pri preuzimanju. Nakon slanja porudžbine dobijate potvrdu emailom;
+        ugovor je zaključen kada Prodavac potvrdi porudžbinu.
+      </p>
+
+      <h2>4. Dostava</h2>
+      <p>
+        Dostava se vrši kurirskom službom po celoj Srbiji, u roku od {SITE.deliveryTime}.
+        Poštarina je besplatna za porudžbine preko {money(SITE.freeShippingThreshold)};
+        za manje porudžbine dostava se naplaćuje po ceni kurirske službe.
+      </p>
+
+      <h2>5. Pravo na odustanak</h2>
+      <p>
+        Potrošač ima pravo da odustane od ugovora u roku od 14 dana od prijema robe,
+        bez navođenja razloga, u skladu sa Zakonom o zaštiti potrošača. Proizvod mora
+        biti nekorišćen i u originalnom pakovanju. Troškove vraćanja snosi potrošač,
+        osim kod oštećene ili pogrešno isporučene robe. Pravo na odustanak ne važi za
+        robu proizvedenu ili sečenu prema posebnim zahtevima potrošača (npr. kanap sečen
+        na traženu dužinu, izrada po meri).
+      </p>
+
+      <h2>6. Reklamacije</h2>
+      <p>
+        Reklamacije se podnose na <a href={`mailto:${SITE.email}`}>{SITE.email}</a> uz
+        broj porudžbine i opis. Prodavac odgovara u roku od 8 dana od prijema
+        reklamacije.
+      </p>
+
+      <h2>7. Odgovornost</h2>
+      <p>
+        Kanape za penjanje, ljuljaške, mreže i merdevine montirajte isključivo na
+        konstrukciju predviđenu za dinamičko opterećenje i redovno ih proveravajte na
+        habanje. Deca ih koriste pod nadzorom odraslih. Električnu rasvetu priključuje
+        ovlašćeni električar.
+      </p>
+
+      <h2>8. Kontakt</h2>
+      <p>{SITE.legalName}, {SITE.address.street}, {SITE.address.zip} {SITE.address.city} · {SITE.phone} · {SITE.email}</p>
+    </article>
+  </div>
+</Base>
+
+<style>
+  .prose {
+    padding-block: 0.5rem 2rem;
+  }
+  .prose h1 {
+    font-size: var(--step-3);
+  }
+</style>

@@ -1,0 +1,29 @@
+{
+  "name": "jutasvet-sajt",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run build:admin && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "images": "node scripts/fetch-images.mjs",
+    "build:admin": "npm --prefix admin install --no-audit --no-fund && npm --prefix admin run build",
+    "dev:admin": "npm --prefix admin run dev"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/vercel": "^8.0.4",
+    "astro": "^5.1.5",
+    "resend": "^4.0.1",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/web-push": "^3.6.4",
+    "sharp": "^0.33.5"
+  }
+}

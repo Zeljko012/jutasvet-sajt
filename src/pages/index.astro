@@ -1,0 +1,662 @@
+---
+import Base from "../layouts/Base.astro";
+import ProductCard from "../components/ProductCard.astro";
+import { SITE } from "../data/site";
+import {
+  bestsellers,
+  featuredProducts,
+  productsByCategory,
+  priceFromLabel,
+  CATEGORIES,
+  CATEGORY_META,
+  PRODUCTS,
+} from "../data/products";
+import { money } from "../lib/format";
+import { USE_PAGES, GUIDES } from "../data/seo";
+import { withBase } from "../lib/url";
+
+// 8 proizvoda = 2 reda po 4
+const best = bestsellers().slice(0, 8);
+const minPrice = Math.min(...PRODUCTS.filter((p) => !p.onRequest).map((p) => p.price));
+const featured = featuredProducts().slice(0, 2);
+
+const catCounts = Object.fromEntries(
+  CATEGORIES.map((c) => [c, productsByCategory(c).length]),
+) as Record<(typeof CATEGORIES)[number], number>;
+
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.name,
+  url: SITE.url,
+  inLanguage: "sr-RS",
+};
+const localLd = {
+  "@context": "https://schema.org",
+  "@type": "Store",
+  name: SITE.name,
+  url: SITE.url,
+  image: new URL("/og-default.jpg", SITE.url).href,
+  telephone: SITE.phoneHref.replace("tel:", ""),
+  email: SITE.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE.address.street,
+    postalCode: SITE.address.zip,
+    addressLocality: SITE.address.city,
+    addressCountry: SITE.address.countryCode,
+  },
+  areaServed: "RS",
+};
+---
+
+<Base
+  title="Juta Svet — jutani kanap na metar, kanapi za penjanje i dekoracija od jute"
+  description={SITE.description}
+  jsonLd={[websiteLd, localLd]}
+>
+  <!-- HERO: velika slika preko cele širine (kao na starom sajtu) -->
+  <section class="hero" aria-labelledby="hero-title">
+    <picture class="hero__img">
+      <source media="(max-width: 760px)" srcset={withBase("/images/home/hero-sm.webp")} />
+      <img
+        src={withBase("/images/home/hero.webp")}
+        alt="Izrada jutanog kanapa u radionici Juta Svet — pletenje, vezivanje i šivenje jute"
+        width="2400"
+        height="1128"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero__panel container">
+      <div class="hero__copy">
+        <span class="eyebrow">Snaga prirode u svakom vlaknu</span>
+        <h1 id="hero-title">Prirodni kanapi od jute</h1>
+        <p class="hero__lead">
+          Ekološki, izdržljivi i višestruko primenljivi jutani kanapi — na metar, u debljini
+          koja vam treba, i proizvodi od jute rađeni rukom.
+        </p>
+        <div class="hero__cta">
+          <a href={withBase("/prodavnica")} class="btn btn--lg">Pogledaj sve proizvode</a>
+          <a href={withBase("/reference")} class="btn btn--ghost btn--lg">Naši radovi</a>
+        </div>
+        <ul class="hero__trust">
+          <li>Porodična proizvodnja</li>
+          <li>100% juta</li>
+          <li>Sečenje po meri</li>
+          <li>Dostava {SITE.deliveryTime}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <h2>Najtraženije</h2>
+      <a href={withBase("/prodavnica")}>Cela ponuda →</a>
+    </div>
+    <div class="product-grid">
+      {best.map((p, i) => <ProductCard product={p} eager={i < 4} />)}
+    </div>
+
+    <div class="allcta">
+      <div>
+        <h2>Pogledajte sve naše proizvode</h2>
+        <p>
+          Naši kanapi od jute izrađeni su od 100% prirodnih vlakana, idealni za sve koji traže
+          ekološki prihvatljivo i pouzdano rešenje.
+        </p>
+      </div>
+      <a href={withBase("/prodavnica")} class="btn btn--lg">Pogledaj ponudu</a>
+    </div>
+  </section>
+
+  <!-- VIDEO: prikazuje se samo na početnoj strani -->
+  <section class="section container">
+    <div class="video">
+      <div class="video__copy">
+        <span class="eyebrow">Iz radionice</span>
+        <h2>Od vlakna do gotovog kanapa</h2>
+        <p>
+          Svaki metar sečemo, pletemo i pakujemo u našoj radionici u Požarevcu. Pogledajte kako
+          nastaju naši proizvodi.
+        </p>
+        <a href={SITE.social.instagram} target="_blank" rel="noopener" class="video__link">
+          Još videa na Instagramu {SITE.social.instagramHandle} →
+        </a>
+      </div>
+      <div class="video__frame">
+        <video
+          src={withBase("/video/juta-svet.mp4")}
+          poster={withBase("/video/juta-svet-poster.webp")}
+          controls
+          playsinline
+          muted
+          loop
+          preload="none"
+          width="478"
+          height="850"
+          aria-label="Video iz radionice Juta Svet"
+        ></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <h2>Kolekcije</h2>
+      <span class="eyebrow">{CATEGORIES.length} kategorije</span>
+    </div>
+    <nav class="bands" aria-label="Kolekcije">
+      {
+        CATEGORIES.map((c, i) => (
+          <a class="band" href={withBase(`/kategorija/${c}`)}>
+            <span class="band__i">0{i + 1}</span>
+            <span class="band__n">{CATEGORY_META[c].title}</span>
+            <span class="band__c">
+              {catCounts[c]} {catCounts[c] === 1 ? "proizvod" : "proizvoda"}
+            </span>
+          </a>
+        ))
+      }
+    </nav>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <h2>Izdvajamo</h2>
+      <span class="eyebrow">{money(SITE.freeShippingThreshold)}+ = besplatna dostava</span>
+    </div>
+    <div class="feature">
+      {
+        featured.map((p) => (
+          <a class="feature__card" href={withBase(`/proizvod/${p.slug}`)}>
+            <div class="feature__img">
+              <img src={withBase(p.images[0].src)} alt={p.images[0].alt} width="800" height="800" loading="lazy" />
+            </div>
+            <div class="feature__body">
+              <h3>{p.name}</h3>
+              <p>{p.lead}</p>
+              <span class="price">{priceFromLabel(p, money)}</span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="story">
+      <blockquote>
+        „Autentični, rustični materijali mogu transformisati prostor, a da ne naruše
+        prirodni sklad. Juta spaja estetiku za oko, funkcionalnost za svakodnevni život i
+        održivost za budućnost.”
+      </blockquote>
+      <div class="story__stats">
+        <div><b>1–40 mm</b><span>debljine kanapa, na metar ili u klupčetu</span></div>
+        <div><b>100% juta</b><span>biorazgradiva, bez hemikalija</span></div>
+        <div><b>Po meri</b><span>dužina, debljina i izrada prema vašem projektu</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container seo-home">
+    <div class="section-head">
+      <h2>Za šta vam treba juta?</h2>
+      <a href={withBase("/primena")}>Sve primene →</a>
+    </div>
+    <ul class="gift-chips">
+      {USE_PAGES.map((g) => <li><a href={withBase(`/primena/${g.slug}`)}>{g.h1}</a></li>)}
+      {GUIDES.map((g) => <li><a href={withBase(`/vodic/${g.slug}`)}>{g.title}</a></li>)}
+    </ul>
+
+    <div class="seo-home__text">
+      <h2>Jutani kanap na metar i proizvodi od jute</h2>
+      <p>
+        Juta Svet je porodična proizvodnja iz Požarevca. Nudimo <a href={withBase("/kategorija/kanap-i-tkanina")}>jutani kanap na metar</a>
+        — prirodni, sintetički i u boji, od 1 do 40 mm — kao i jutano platno i trake,
+        <a href={withBase("/kategorija/sport-i-penjanje")}>kanape za penjanje, brodske merdevine i mreže</a>,
+        <a href={withBase("/kategorija/kuca-i-dekoracija")}>nameštaj, rasvetu i dekoraciju od jute</a> i
+        <a href={withBase("/kategorija/propratni-materijal")}>propratni materijal</a> za montažu.
+      </p>
+      <p>
+        Cene počinju od {money(minPrice)}, plaćanje je pouzećem, a dostava po celoj Srbiji traje {SITE.deliveryTime}.
+        Za porudžbine preko {money(SITE.freeShippingThreshold)} dostava je besplatna. Ne znate koja debljina
+        vam treba? Pročitajte naš <a href={withBase("/vodic")}>vodič kroz jutani kanap</a> ili pogledajte
+        <a href={withBase("/reference")}>reference</a> — radove po meri za domove i lokale.
+      </p>
+    </div>
+  </section>
+
+  <section class="section container newsletter">
+    <div>
+      <h2>Priključite se našem newsletter-u</h2>
+      <p>Budite u toku sa svim novinama i akcijama. Bez spama; odjava u svakom trenutku.</p>
+    </div>
+    <form data-newsletter novalidate>
+      <label class="visually-hidden" for="nl-email">Email adresa</label>
+      <input id="nl-email" type="email" name="email" placeholder="vas@email.rs" autocomplete="email" required />
+      <input type="text" name="company" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true" />
+      <button class="btn" type="submit">Prijava</button>
+    </form>
+  </section>
+</Base>
+
+<style>
+  /* hero — velika slika preko cele širine */
+  .hero {
+    position: relative;
+    isolation: isolate;
+    min-height: min(78vh, 760px);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background: var(--surface-tint);
+  }
+  .hero__img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .hero__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, transparent 45%, rgba(20, 14, 10, 0.35) 100%);
+    pointer-events: none;
+  }
+  .hero__panel {
+    padding-block: clamp(1.25rem, 4vw, 2.75rem);
+  }
+  @media (min-width: 761px) {
+    .hero__panel {
+      margin-left: max(var(--gutter), calc((100% - 1360px) / 2));
+      margin-right: auto;
+      width: auto;
+    }
+  }
+  .hero__copy {
+    max-width: 500px;
+    background: color-mix(in srgb, var(--ground) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.25rem, 3vw, 2rem);
+    box-shadow: var(--shadow-md);
+  }
+  .hero__copy h1 {
+    font-size: clamp(2.2rem, 1.5rem + 3vw, 3.4rem);
+    line-height: 1.04;
+    margin: 0.8rem 0 0;
+  }
+  .hero__lead {
+    max-width: 46ch;
+    color: var(--ink-soft);
+    font-size: var(--step-1);
+    margin-top: 0.9rem;
+  }
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.4rem;
+  }
+  .hero__trust {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    padding: 0;
+    margin: 1.4rem 0 0;
+    font: 500 0.74rem/1 var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+  }
+  .hero__trust li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .hero__trust li + li::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--line-strong);
+  }
+  @media (max-width: 760px) {
+    .hero {
+      display: block;
+      min-height: 0;
+      background: var(--ground);
+    }
+    .hero::after {
+      display: none;
+    }
+    .hero__img {
+      position: relative;
+      inset: auto;
+      display: block;
+      aspect-ratio: 2.13 / 1;
+    }
+    .hero__copy {
+      max-width: none;
+      background: var(--surface);
+      backdrop-filter: none;
+      box-shadow: none;
+      margin-top: -1.5rem;
+      position: relative;
+    }
+  }
+
+  /* "Pogledajte sve naše proizvode" (bez slike) */
+  .allcta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding-block: clamp(1.5rem, 4vw, 2.25rem);
+    margin-top: clamp(2.5rem, 6vw, 4rem);
+  }
+  .allcta h2 {
+    font-size: var(--step-3);
+  }
+  .allcta p {
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    max-width: 58ch;
+  }
+
+  /* video */
+  .video {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.25rem, 4vw, 2.75rem);
+  }
+  .video__copy h2 {
+    font-size: var(--step-3);
+    margin-top: 0.7rem;
+  }
+  .video__copy p {
+    color: var(--ink-soft);
+    margin-top: 0.7rem;
+    max-width: 44ch;
+  }
+  .video__link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .video__link:hover {
+    text-decoration: underline;
+  }
+  .video__frame {
+    justify-self: center;
+    width: min(100%, 340px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #000;
+    aspect-ratio: 478 / 850;
+  }
+  .video__frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 760px) {
+    .video {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* category bands */
+  .bands {
+    display: flex;
+    flex-direction: column;
+  }
+  .band {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 1.2rem;
+    padding: 1.25rem 0.8rem;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    transition:
+      background-color 0.25s ease,
+      transform 0.25s ease;
+  }
+  .band:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .band__i,
+  .band__c {
+    font: 500 0.78rem/1 var(--font-mono);
+    color: var(--ink-soft);
+  }
+  .band__n {
+    font-family: var(--font-display);
+    font-size: var(--step-5);
+  }
+  .band:hover {
+    background: var(--surface);
+    transform: translateX(10px);
+  }
+  .band:hover .band__n {
+    color: var(--accent);
+  }
+
+  /* feature */
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  .feature__card {
+    text-decoration: none;
+    color: inherit;
+  }
+  .feature__img {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--surface-tint);
+  }
+  .feature__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  .feature__card:hover .feature__img img {
+    transform: scale(1.03);
+  }
+  .feature__body {
+    padding-top: 0.9rem;
+  }
+  .feature__body h3 {
+    font-size: var(--step-2);
+  }
+  .feature__body p {
+    color: var(--ink-soft);
+    margin: 0.35rem 0 0.6rem;
+    max-width: 44ch;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 700px) {
+    .feature {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* story */
+  .story {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.5rem, 4vw, 3rem);
+  }
+  .story blockquote {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    line-height: 1.35;
+  }
+  .story__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .story__stats div {
+    border-left: 2px solid var(--clay);
+    padding-left: 0.9rem;
+  }
+  .story__stats b {
+    display: block;
+    font: 500 1.05rem/1.2 var(--font-mono);
+  }
+  .story__stats span {
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+  }
+  @media (max-width: 700px) {
+    .story {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* seo + primena */
+  .gift-chips {
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .gift-chips a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+  }
+  .gift-chips a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .seo-home__text {
+    max-width: 760px;
+  }
+  .seo-home__text h2 {
+    font-size: var(--step-2);
+    margin-bottom: 0.7rem;
+  }
+  .seo-home__text p {
+    color: var(--ink-soft);
+  }
+  .seo-home__text p + p {
+    margin-top: 0.8rem;
+  }
+  .seo-home__text a {
+    color: var(--accent);
+  }
+
+  /* newsletter */
+  .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  .newsletter h2 {
+    font-size: var(--step-2);
+  }
+  .newsletter p {
+    color: var(--ink-soft);
+    margin-top: 0.3rem;
+    max-width: 40ch;
+  }
+  .newsletter form {
+    display: flex;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 260px;
+    max-width: 420px;
+  }
+  .newsletter input[type="email"] {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--ground);
+    color: var(--ink);
+    font: inherit;
+  }
+</style>
+
+<script>
+  import { withBase } from "../lib/url";
+
+  const form = document.querySelector<HTMLFormElement>("[data-newsletter]");
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    if (data.get("company")) return; // honeypot
+    const email = String(data.get("email") || "");
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      window.dispatchEvent(
+        new CustomEvent("juta:toast", { detail: "Unesite ispravnu email adresu." }),
+      );
+      return;
+    }
+    const btn = form.querySelector("button");
+    if (btn) btn.disabled = true;
+    try {
+      const res = await fetch(withBase("/api/subscribe"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, company: data.get("company") || "" }),
+      });
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || !out.ok) throw new Error(out.error || "Prijava trenutno nije moguća.");
+      form.innerHTML = "<p style='color:var(--accent);font-weight:600'>Hvala! Javićemo se sa novostima.</p>";
+    } catch (err) {
+      if (btn) btn.disabled = false;
+      window.dispatchEvent(new CustomEvent("juta:toast", { detail: (err as Error).message }));
+    }
+  });
+</script>

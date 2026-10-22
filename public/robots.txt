@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /kasa
+Disallow: /hvala
+Disallow: /korpa
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://jutasvet.com/sitemap-index.xml

@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-10-22T06:37:09.139Z",
+        "reason": "Claude: email HTML template in src/pages/api/upit.ts needs a web-safe font (custom fonts don't load in mail clients); site UI uses Young Serif/Hanken Grotesk"
+      }
+    ]
+  }
+}

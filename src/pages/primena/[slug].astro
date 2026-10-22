@@ -1,0 +1,28 @@
+---
+import ProductLanding from "../../components/ProductLanding.astro";
+import { getProduct, CATEGORIES, CATEGORY_META, type Product } from "../../data/products";
+import { USE_PAGES, getUsePage } from "../../data/seo";
+
+export function getStaticPaths() {
+  return USE_PAGES.map((g) => ({ params: { slug: g.slug } }));
+}
+
+const { slug } = Astro.params as { slug: string };
+const g = getUsePage(slug)!;
+const items = g.products.map((s) => getProduct(s)).filter((p): p is Product => !!p);
+
+const also = [
+  ...USE_PAGES.filter((x) => x.slug !== g.slug).map((o) => ({ label: o.h1, href: `/primena/${o.slug}` })),
+  ...CATEGORIES.map((c) => ({ label: CATEGORY_META[c].title, href: `/kategorija/${c}` })),
+  { label: "Reference — naši radovi", href: "/reference" },
+];
+---
+
+<ProductLanding
+  page={g}
+  items={items}
+  section="primena"
+  hubLabel="Primena"
+  alsoTitle="Još primena"
+  also={also}
+/>

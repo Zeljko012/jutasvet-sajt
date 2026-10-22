@@ -1,0 +1,96 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { getProduct } from "../../data/products";
+import { USE_PAGES } from "../../data/seo";
+import { withBase } from "../../lib/url";
+
+const cards = USE_PAGES.map((g) => ({ ...g, count: g.products.filter((s) => getProduct(s)).length }));
+---
+
+<Base
+  title="Primena jutanog kanapa – ograde, grebalice, igrališta, rasveta"
+  description="Za šta se koristi jutani kanap: ograde i gelenderi, mačje grebalice, dečija igrališta, rasveta za kafane, pakovanje i nautički dekor. Proizvodi i saveti."
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: "Primena" }]} />
+    <header class="hub-head">
+      <h1>Primena jutanog kanapa</h1>
+      <p>
+        Šta pravite? Izaberite primenu i pogledajte proizvode i savete koji vam
+        trebaju — od ograde i grebalice do rasvete za lokal.
+      </p>
+    </header>
+
+    <ul class="hub-grid">
+      {
+        cards.map((c) => (
+          <li>
+            <a href={withBase(`/primena/${c.slug}`)}>
+              <h2>{c.h1}</h2>
+              <p>{c.intro[0]}</p>
+              <span>{c.count} {c.count === 1 ? "proizvod" : "proizvoda"} →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .hub-head {
+    padding-block: 0.5rem 1.5rem;
+  }
+  .hub-head h1 {
+    font-size: var(--step-3);
+  }
+  .hub-head p {
+    color: var(--ink-soft);
+    margin-top: 0.6rem;
+    max-width: 60ch;
+  }
+  .hub-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 700px) {
+    .hub-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .hub-grid a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    height: 100%;
+    padding: 1.4rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    transition: border-color 0.2s ease;
+  }
+  .hub-grid a:hover {
+    border-color: var(--accent);
+  }
+  .hub-grid h2 {
+    font-size: var(--step-2);
+  }
+  .hub-grid p {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  .hub-grid span {
+    margin-top: auto;
+    font: 500 0.78rem/1 var(--font-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+</style>

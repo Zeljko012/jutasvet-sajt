@@ -1,0 +1,137 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { SITE } from "../data/site";
+import { money } from "../lib/format";
+
+const faqs = [
+  {
+    q: "Kako se plaća?",
+    a: `Pouzećem — gotovinom kuriru pri preuzimanju. Nema online plaćanja karticom.`,
+  },
+  {
+    q: "Koliko traje dostava?",
+    a: `${SITE.deliveryTime} od potvrde porudžbine, kurirskom službom po celoj Srbiji. Za izradu po meri rok se dogovara.`,
+  },
+  {
+    q: "Kolika je poštarina?",
+    a: `Besplatna je za porudžbine preko ${money(SITE.freeShippingThreshold)}. Za manje porudžbine dostava se naplaćuje po ceni kurirske službe, plaća se kuriru zajedno sa porudžbinom.`,
+  },
+  {
+    q: "Da li sečete kanap po meri?",
+    a: `Da. Na stranici proizvoda birate debljinu i dužinu, a ako vam treba dužina koje nema u ponudi, pošaljite upit — sečemo po meri.`,
+  },
+  {
+    q: "Koja je razlika između prirodne i sintetičke jute?",
+    a: `Prirodna juta je biljno, biorazgradivo vlakno, namenjeno pre svega unutrašnjem prostoru. Sintetička juta izgleda slično, ali ne upija vodu i ne truli, pa je bolja za spoljnu upotrebu.`,
+  },
+  {
+    q: "Koju debljinu kanapa da izaberem?",
+    a: `Za pakovanje i makrame 1–4 mm, za grebalice i dekoraciju 6–12 mm, za ograde i pregrade 16–25 mm, a za gelendere i penjanje 30–40 mm. Više u našem vodiču.`,
+  },
+  {
+    q: "Kako se održavaju proizvodi od jute?",
+    a: `Prašinu uklonite četkom ili usisivačem, fleke tapkajte blago vlažnom krpom. Prirodnu jutu čuvajte od dugotrajne vlage.`,
+  },
+  {
+    q: "Šta znači „cena na upit”?",
+    a: `Za proizvode koji se rade po meri (rasveta, zidne i plafonske dekoracije, pribor) cena zavisi od dimenzija i izrade. Pošaljite upit sa stranice proizvoda i javićemo se sa ponudom.`,
+  },
+  {
+    q: "Mogu li da vratim proizvod?",
+    a: `Da, u roku od 14 dana od prijema, nekorišćen i u originalnom pakovanju — osim robe sečene ili izrađene po vašoj meri. Detalji na strani Dostava i povraćaj.`,
+  },
+  {
+    q: "Da li radite veće količine i projekte za lokale?",
+    a: `Da — veće količine kanapa, opremanje kafana, restorana i terasa. Pogledajte reference i pišite nam na ${SITE.email}.`,
+  },
+];
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+---
+
+<Base
+  title="Česta pitanja"
+  description="Odgovori na najčešća pitanja o plaćanju, dostavi, debljinama kanapa, prirodnoj i sintetičkoj juti i povraćaju — Juta Svet."
+  jsonLd={[faqLd]}
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: "Česta pitanja" }]} />
+    <div class="faq">
+      <h1>Česta pitanja</h1>
+      <div class="faq__list">
+        {
+          faqs.map((f, i) => (
+            <details open={i === 0}>
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))
+        }
+      </div>
+      <p class="faq__more">
+        Nema odgovora na vaše pitanje? Pišite na
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      </p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .faq {
+    max-width: 720px;
+    padding-block: 0.5rem 2.5rem;
+  }
+  .faq h1 {
+    font-size: var(--step-3);
+    margin-bottom: 1.5rem;
+  }
+  .faq__list {
+    border-top: 1px solid var(--line);
+  }
+  details {
+    border-bottom: 1px solid var(--line);
+  }
+  summary {
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: "+";
+    color: var(--ink-soft);
+    flex: 0 0 auto;
+  }
+  details[open] summary::after {
+    content: "–";
+  }
+  details p {
+    padding-bottom: 1rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  .faq__more {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  .faq__more a {
+    color: var(--accent);
+  }
+</style>

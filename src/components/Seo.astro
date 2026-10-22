@@ -1,0 +1,49 @@
+---
+import { SITE } from "../data/site";
+import { withBase } from "../lib/url";
+
+interface Props {
+  title: string;
+  description: string;
+  /** apsolutna ili relativna putanja slike za deljenje */
+  image?: string;
+  /** relativna putanja stranice, npr. "/proizvod/prirodna-juta" */
+  path?: string;
+  type?: "website" | "product" | "article";
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  image = "/og-default.jpg",
+  path = Astro.url.pathname,
+  type = "website",
+  noindex = false,
+} = Astro.props;
+
+// Ukloni baznu putanju (npr. "/jutasvet-sajt") da kanonik pokazuje na pravi domen
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+const relPath = base && path.startsWith(base) ? path.slice(base.length) || "/" : path;
+const canonical = new URL(relPath, SITE.url).href;
+const ogImage = new URL(withBase(image), Astro.site ?? SITE.url).href;
+const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:locale" content="sr_RS" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
