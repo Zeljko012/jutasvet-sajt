@@ -135,10 +135,10 @@ const optSummary = !firstOpt || firstOpt.values.length < 2
     background: var(--accent);
     color: var(--accent-ink);
   }
-  /* telefon/tablet: nema hover-a — kartica vodi na proizvod, bez dugmeta preko slike */
-  @media (hover: none) {
+  /* dugme preko slike postoji samo uz miš; na telefonu/tabletu kartica vodi na proizvod */
+  @media (hover: none), (pointer: coarse), (any-pointer: coarse) {
     .pc__add {
-      display: none;
+      display: none !important;
     }
   }
 

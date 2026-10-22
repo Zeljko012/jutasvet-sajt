@@ -62,8 +62,9 @@ python scripts/parse_csv.py "putanja/do/products_export.csv"
 # 2) products-source.json -> src/data/products.ts + katalog za admin aplikaciju
 node scripts/gen-products.mjs
 
-# 3) slike novih proizvoda
+# 3) slike novih proizvoda (+ uklanjanje Gemini zvezdice sa AI slika)
 npm run images
+python scripts/remove-gemini-mark.py
 
 # 4) preusmerenja sa starih Shopify adresa
 node scripts/gen-redirects.mjs
